@@ -20,4 +20,4 @@ Contains text from [Tricks, Empty Rooms, and Basic Trap Design](http://angband.o
 
 * Still got monsters to finish off.
 * Some of the generators could be expanded upon - the Markov algorithm I'm using isn't great. More Things?
-* Want to add a page for me so I don't go mad copy and pasting? The output for each option takes a text file and turns every newline on it into a list element. [This is the file for the Effects](http://robotacid.com/games/dw-improv/data/Effects.txt). You can add html in there as well, any newline will be turned into a new entry. Headers can be done by dropping a <h3> tag in. For the generators I run the file through a function such as "Pick 10 at random".
+* Want to add a page for me so I don't go mad copy and pasting? The output for each option takes a text file and turns every newline on it into a list element. [This is the file for the Effects](http://robotacid.com/games/dw-improv/data/Effects.txt). You can add html in there as well, any newline will be turned into a new entry. Headers can be done by dropping a h3 tag in. For the generators I run the file through a function such as "Pick 10 at random".
