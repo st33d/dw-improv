@@ -8,8 +8,6 @@ body {
 	font-weight: normal;
 }
 a {
-	font-size: larger;
-    background-color: #eee;
     color: #800;
 	text-decoration: none;
 	font-weight: bold;
@@ -58,7 +56,11 @@ html,body
     border-width: thin;
     border-color: #666;
 }
-.Folder{
+.folder{
+    background-color: #eee;
+}
+.Folders{
+    font-size: larger;
     border: solid;
     border-width: thin;
     border-color: #666;
@@ -68,7 +70,7 @@ html,body
     float: left;
     display: table-row;
 }
-.File{
+.Files{
     border: solid;
     border-width: thin;
     border-color: #666;

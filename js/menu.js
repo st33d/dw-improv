@@ -17,6 +17,7 @@ var Menu = {
 		var markov = Menu.markovList;
 		var pick20 = Menu.pick20;
 		var pick10 = Menu.pick10;
+		var pick3 = Menu.pick3;
 		
 		this.root = new Ref("data", 0);
 		this.root.load({
@@ -37,6 +38,7 @@ var Menu = {
 			Gear:true,
 			Things:pick10,
 			Effects:pick20,
+			Plots:pick3,
 			Tags:true
 		});
 	},
@@ -46,6 +48,7 @@ var Menu = {
 		this.folder$.html(this.root.html(true));
 		console.log("loaded");
 		console.log(this.root);
+		sessionStorage.setItem("appcache_update", 0);
 	},
 	
 	open: function(url){
@@ -72,6 +75,10 @@ var Menu = {
 		} else {
 			console.log("empty ref at: "+url);
 		}
+	},
+	
+	pick3:function(data, title){
+		return Rng.pickList(data, 3);
 	},
 	
 	pick10:function(data, title){

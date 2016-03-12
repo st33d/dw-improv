@@ -1,34 +1,17 @@
 CACHE MANIFEST
-# 2015-03-09:v0
+# 2015-03-09:v48
 
 # Explicitly cached 'master entries'.
-# CACHE:
+CACHE:
 
-# index.html
-# style.css
-# js/filth.js
-# js/markov.js
-# js/menu.js
-# js/ref.js
-# js/rng.js
+index.html
+style.css
+js/filth.js
+js/markov.js
+js/menu.js
+js/ref.js
+js/rng.js
 
-# No idea if this works
-# data/Moves/Barbarian.txt
-# data/Moves/Bard.txt
-# data/Moves/Cleric-Spells.txt
-# data/Moves/Cleric.txt
-# data/Moves/Druid.txt
-# data/Moves/Fighter.txt
-# data/Moves/Immolator.txt
-# data/Moves/Paladin.txt
-# data/Moves/Ranger.txt
-# data/Moves/Special.txt
-# data/Moves/Thief.txt
-# data/Moves/Wizard-Spells.txt
-# data/Moves/Wizard.txt
-# data/NPCs/Name-Gen/Deity.txt
-# data/NPCs/Name-Gen/Irish.txt
-# data/NPCs/Name-Gen/Tolkien.txt
-# data/NPCs/Instincts.txt
-# data/NPCs/Knacks.txt
-# data/Rooms/Things.txt
+NETWORK:
+*
+http://*

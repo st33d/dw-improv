@@ -6,7 +6,11 @@ Hosted at [http://robotacid.com/games/dw-improv/](http://robotacid.com/games/dw-
 
 By Aaron Steed.
 
-Contains text from [Tricks, Empty Rooms, and Basic Trap Design](http://angband.oook.cz/steamband/Tricks.pdf) by Courtney C. Campbell
+Contains text from:
+
+[Dungeon World SRD](http://www.dungeonworldsrd.com/)
+[Tricks, Empty Rooms, and Basic Trap Design](http://angband.oook.cz/steamband/Tricks.pdf) by Courtney C. Campbell
+[The Big List of RPG Plots</a> by S. John Ross](http://www222.pair.com/sjohn/blueroom/plots.htm)
 
 ##TODO
 

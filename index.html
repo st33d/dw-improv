@@ -1,29 +1,39 @@
 <!doctype html>
-<html> <!-- manifest="manifest.appcache">-->
+<html manifest="manifest.appcache">
 	<head>
 		<meta charset="utf-8">
 		<title>Dungeon World Improv</title>
 		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
 		<script type="text/javascript">
 		// Check if a new cache is available on page load.
-		// window.addEventListener('load', function(e) {
-		// 	window.applicationCache.addEventListener('updateready', function(e) {
-		// 		if(window.applicationCache.status == window.applicationCache.UPDATEREADY){
-		// 			window.applicationCache.swapCache();
-		// 			window.location.reload();
-		// 			console.log("appcache updated");
-		// 		}
-		// 	}, false);
-		// }, false);
+		window.addEventListener('load', function(e) {
+			window.applicationCache.addEventListener('updateready', function(e) {
+				if(window.applicationCache.status == window.applicationCache.UPDATEREADY){
+					window.applicationCache.swapCache();
+					window.location.reload();
+					console.log("appcache updated");
+					sessionStorage.setItem("appcache_update", 1);
+					
+				}
+			}, false);
+		}, false);
 		</script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
 		<h2>Dungeon World Improv</h2>
-		<span class="small">An indie tool for </span><a class="small" href="http://www.dungeon-world.com/">Dungeon World</a><span class="small">. Contains text from </span><a class="small" href="http://angband.oook.cz/steamband/Tricks.pdf">Tricks, Empty Rooms, and Basic Trap Design</a><span class="small"> by Courtney C. Campbell</span>
+		<span class="small">An indie tool for <a href="http://www.dungeon-world.com/">Dungeon World</a> - <a href="javascript:$('#sources').toggle();">Sources:</a></span>
+		<div id="sources" class="small" style="display: none;">
+			<p>
+			<a  href="http://www.dungeonworldsrd.com/">Dungeon World SRD</a><br />
+			<a  href="http://angband.oook.cz/steamband/Tricks.pdf">Tricks, Empty Rooms, and Basic Trap Design</a> by Courtney C. Campbell<br />
+			<a  href="http://www222.pair.com/sjohn/blueroom/plots.htm">The Big List of RPG Plots</a> by S. John Ross<br />
+			
+			<p>This project is open source on <a href="https://github.com/st33d/dw-improv">GitHub.</a>
+		</div>
 		<div class="Container">
-		<div class="Folder" id="folder">Loading...</div>
-		<div class="File" id="file"><h3>Select a page from the folders on the left</h3></div>
+		<div class="Folders" id="folder">Loading...</div>
+		<div class="Files" id="file"><h3>Select a page from the folders on the left</h3></div>
 		</div>
 		<div class="Footer"></div>
 		<script src="js/filth.js"></script>

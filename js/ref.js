@@ -5,10 +5,13 @@ var Ref = function(name, parent){
 	this.contents = [];
 	this.data = null;
 	this.func = null;
+	this.backup = null;
 }
 
 Ref.prototype.load = function(obj){
 	var r;
+	var cacheUpdate = parseInt(sessionStorage.getItem("appcache_update"));
+	
 	for(var k in obj){
 		var v = obj[k];
 		r = new Ref(k, this);
@@ -22,25 +25,42 @@ Ref.prototype.load = function(obj){
 		if(v === true){
 			// load data
 			Menu.loading++;
-			$.ajax({
-				url: r.url(),
-				dataType: 'text',
-				context: r,
-				error: function(XMLHttpRequest, textStatus, errorThrown){
-					console.log('status:' + XMLHttpRequest.status + ', status text: ' + XMLHttpRequest.statusText);
-				},
-				success: function(data){
-					this.data = data.split("\n");
-					if(--Menu.loading == 0){
-						Menu.onLoaded();
+			var id = r.id();
+			r.backup = localStorage.getItem(id);
+			
+			if(cacheUpdate || !r.backup){
+				$.ajax({
+					url: r.url(),
+					dataType: 'text',
+					context: r,
+					cache: true,
+					error: function(XMLHttpRequest, textStatus, errorThrown){
+						console.log('status:' + XMLHttpRequest.status + ', status text: ' + XMLHttpRequest.statusText);
+						if(this.backup){
+							console.log("back up "+this.id());
+							this.data = this.backup;
+							if(--Menu.loading == 0) Menu.onLoaded();
+						}
+					},
+					success: function(data){
+						var id = this.id();
+						this.data = data.split("\n");
+						console.log("loaded "+id);
+						localStorage.setItem(id, this.data);
+						if(--Menu.loading == 0) Menu.onLoaded();
 					}
-				}
-			});
+				});
+			} else {
+				console.log("back up "+id);
+				r.data = r.backup;
+				--Menu.loading;
+			}
 		} else if(v){
 			r.load(v);
 		}
 		if(v) this.contents.push(r);
 	}
+	if(!this.parent && Menu.loading == 0) Menu.onLoaded();
 }
 
 Ref.prototype.html = function(isRoot){
@@ -58,7 +78,7 @@ Ref.prototype.html = function(isRoot){
 		if(!isRoot) str += "</li>";
 		return str;
 	} else {
-		return "<li>"+this.method()+"</li>";
+		return "<li"+">"+this.method()+"</li>";
 	}
 }
 
@@ -67,10 +87,11 @@ Ref.prototype.method = function(){
 		"<a href='javascript:Menu.open(\""+
 		this.id()+
 		"\");'"+
-		(this.data != null ? " class='item'" : "")+
+		(this.contents.length ? " class='folder'" : "")+
 		">"+
 		this.name+
 		(this.func != null ? " "+Rng.symbol() : "")+
+		(this.contents.length ? " "+" \u279b" : "")+
 		"</a>";
 	return str;
 }
