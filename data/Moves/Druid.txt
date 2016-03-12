@@ -1,0 +1,32 @@
+<h3>Race Moves</h3>
+<b>Elf</b> The sap of the elder trees flows within you. In addition to any other attunements, the Great Forest is always considered your land.
+<b>Human</b> As your people learned to bind animals to field and farm, so too are you bound to them. You may always take the shape of any domesticated animal, in addition to your normal options.
+<b>Halfling</b> You sing the healing songs of spring and brook. When you make camp, you and your allies heal +1d6.
+<h3>Starting Moves</h3>
+<b>Born Of The Soil</b> Choose one of the following. It is the land to which you are attuned—when shapeshifting you may take the shape of any animal who might live in your Land.<ul><li>The Great Forests</li><li>The Whispering Plains</li><li>The Vast Desert</li><li>The Stinking Mire</li><li>The River Delta</li><li>The Depths of the Earth</li><li>The Sapphire Islands</li><li>The Open Sea</li><li>The Towering Mountains</li><li>The Frozen North</li><li>The Blasted Wasteland</li></ul>Chose a tell—a physical attribute that marks you as born of the soil—that reflects the spirit of your land. Your tell remains no matter what shape you take.
+<b>By Nature Sustained</b> You don’t need to eat or drink. If a move tells you to mark off a ration just ignore it.
+<b>Spirit Tongue</b> You can understand any animal native to your land or akin to one whose essence you have studied.
+<b>Shapeshifter</b> Call upon the spirits to change your shape (roll+WIS): 10+ hold 3. 7–9 hold 2. 6- hold 1 in addition to whatever the GM says. GM will also tell you one or more moves associated with your new form. Spend 1 hold to make that move. Once you’re out of hold, you return to your natural form. At any time, you may spend all your hold and revert to your natural form.
+<b>Studied Essence</b> Spend time in contemplation of an animal spirit: you may add its species to those you can assume using shapeshifting.
+<h3>Advanced Moves 2-10</h3>
+<b>Hunter’s Brother</b> Choose one move from the ranger class list.
+<b>Red Of Tooth And Claw</b> In an appropriate animal form (something dangerous): increase your damage to d8.
+<b>Communion Of Whispers</b> Spend time in a place, making note of its resident spirits and calling on the spirits of the land (roll+WIS): ou will be granted a vision of significance to you, your allies, and the spirits around you. 10+ the vision will be clear and helpful to you. 7–9 the vision is unclear, its meaning murky. 6-, the vision is upsetting, frightening, or traumatizing. The GM will describe it. Take -1 forward.
+<b>Barkskin</b> So long as your feet touch the ground you have +1 armor.
+<b>Eyes Of The Tiger</b> Mark an animal (with mud, dirt, or blood): you can see through that animal’s eyes as if they were your own, no matter what distance separates you. Only one animal at a time may be marked in this way.
+<b>Shed</b> Take damage while shapeshifted: you may choose to revert to your natural form to negate the damage.
+<b>Thing-talker</b> You may now apply your spirit tongue, shapeshifting and studied essence to inanimate natural objects (plants and rocks) or creatures made thereof, as well as animals. Thing-talker forms can be exact copies or can be mobile vaguely humanoid-shaped entities.
+<b>Formcrafter</b> Shapeshift: choose a stat, you take +1 ongoing to rolls using that stat while shifted. The GM will choose a stat, too: you take -1 ongoing to rolls using that stat while shifted.
+<b>Elemental Mastery</b> Call on the primal spirits of fire, water, earth or air to perform a task for you (roll+WIS): 10+ choose two. 7–9 choose one. 6-, some catastrophe occurs as a result of your calling.<ul><li>The effect you desire comes to pass</li><li>You avoid paying nature’s price</li><li>You retain control</li></ul>
+<b>Balance</b> Deal damage: take 1 balance. When you touch someone and channel the spirits of life you may spend balance. For each balance spent, heal 1d4 HP.
+<h3>Advanced Moves 6-10</h3>
+<b>Embracing No Form</b> Shapeshift: Roll 1d4 and add that total to your hold.
+<b>Doppleganger’s Dance</b> You are able to study the essence of specific individuals to take their exact form, including men, elves, or the like. Suppressing your tell is possible, but if you do, take -1 ongoing until you return to your own form.
+<b>Blood And Thunder</b> <i>Replaces: Red Of Tooth And Claw</i> In an appropriate animal form (something dangerous): increase your damage to d10.
+<b>The Druid Sleep</b> When you take this move, the next opportunity that you have safety and time to spend in an appropriate location, you may attune yourself to a new land. This effect occurs only once and the GM will tell you how long it will take and what cost you must pay. From then on, you are considered to be born of the soil in both lands.
+<b>Weather Weaver</b> Under open skies when the sun rises: the GM will ask you what the weather will be that day. Tell them whatever you like, it comes to pass.
+<b>World-talker</b> <i>Requires: Thing-talker</i> You may now apply your spirit tongue, shapeshifter and studied essence moves to pure elements—fire, water, air and earth.
+<b>Formshaper</b> <i>Requires: Formcrafter</i> You may increase your armor by 1 or deal an additional +1d4 damage while in an animal form. Choose which when you shapeshift.
+<b>Healthy Distrust</b> The unclean magic wielded by mortal men causes you to Defy Danger: treat any result of 6- as a 7–9.
+<b>Chimera</b> Shapeshift: you may create a merged form of up to three different shapes. You may be a bear with the wings of an eagle and the head of a ram, for example. Each feature will grant you a different move to make. Your chimera form follows the same rules as shapeshifter otherwise.
+<b>Stalker’s Sister</b> Choose one move from the ranger class list.

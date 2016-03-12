@@ -1,0 +1,80 @@
+body {
+    background-color: #fefefe;
+    color: #333;
+    font-family: "Georgia";
+    font-size: 16px;
+	padding: 10px;
+	line-height: 1.2;
+	font-weight: normal;
+}
+a {
+	font-size: larger;
+    background-color: #eee;
+    color: #800;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+    color: #fff;
+    background-color: #800;
+}
+
+.item{
+    background-color: #fff;
+}
+.small{
+    background-color: #fff;
+    font-size: smaller;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 3px;
+    margin: 3px;
+}
+li {
+    margin: 5px;
+}
+h2{
+    margin: 3px;
+    padding: 0px;
+}
+h3{
+    background-color: #eee;
+    margin: 3px;
+    padding: 8px;
+}
+.Container{
+    height: 95%;
+}
+html,body
+{
+    margin:0;
+    height: 95%;
+}
+.Boxed{
+    border: solid;
+    border-width: thin;
+    border-color: #666;
+}
+.Folder{
+    border: solid;
+    border-width: thin;
+    border-color: #666;
+    width: 20%;
+    height: 100%;
+    overflow-y: scroll;
+    float: left;
+    display: table-row;
+}
+.File{
+    border: solid;
+    border-width: thin;
+    border-color: #666;
+    width: 79%; /* ???  reacting to the border? */
+    height: 100%;
+    overflow-y: scroll;
+    float: left;
+    display: table-row;
+}

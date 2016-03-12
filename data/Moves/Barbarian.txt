@@ -1,0 +1,31 @@
+<h3>Race Moves</h3>
+<b>Outsider</b> You may be elf, dwarf, halfling, or human, but you and your people are not from around here. At the beginning of each session, the GM will ask you something about your homeland, why you left, or what you left behind. If you answer them, mark XP.
+<h3>Starting Moves</h3>
+<b>Full Plate And Packing Steel</b> You ignore the clumsy tag on armor you wear.
+<b>Unencumbered, Unharmed</b> Below your Load and neither wear armor nor carry a shield, take +1 armor.
+<b>The Upper Hand</b> +1 ongoing to last breath rolls.
+<b>What Are You Waiting For?</b> Cry out a challenge to your enemies (roll+CON): 10+ they treat you as the most obvious threat, 7–9 only a few (the weakest) fall prey to your taunting.
+<b>Herculean Appetites</b> Choose 2 appetites - when pursuing roll 1D6+1D8 for your moves, if D6 is highest GM introduces complication.
+<b>Musclebound</b> While you wield a weapon it gains the forceful and messy tags.
+<h3>Advanced Moves 2-10</h3>
+<b>Still Hungry</b> Choose an additional appetite.
+<b>Appetite For Destruction</b> Take a move from the Fighter, Bard, or Thief class list. You may not take multiclass moves from those classes.
+<b>My Love For You Is Like A Truck</b> Perform a feat of strength: Name someone present whom you have impressed and take +1 forward to parley with them.
+<b>What Is Best In Life</b> At the end of a session, if during this session you have crushed your enemies, seen them driven before you, or have heard the lamentations of their kinfolk mark XP.
+<b>Wide-Wanderer</b> Arrive someplace: Ask the GM about any important traditions, rituals, and so on, they’ll tell you what you need to know.
+<b>Usurper</b> Prove yourself superior to a person in power: +1 forward with their followers, underlings, and hangers on.
+<b>Khan Of Khans</b> Your hirelings always accept the gratuitous fulfillment of one of your appetites as payment.
+<b>Samson</b> You may take a debility to immediately break free of any physical or mental restraint.
+<b>Smash!</b> Hack & Slash: on a 12+ deal your damage and choose something physical your target has (a weapon, their position, a limb): they lose it.
+<b>Indestructible Hunger</b> Take damage: You can choose to take -1 ongoing until you sate one of your appetites instead of taking the damage. If you already have this penalty you cannot choose this option.
+<b>Eye For Weakness</b> Discern Realities: add "What here is weak or vulnerable?" to the list of questions you can ask.
+<b>On The Move</b> Defy a danger caused by movement: take +1
+<h3>Advanced Moves 6-10</h3>
+<b>A Good Day To Die</b> As long as you have less than your CON in current HP (or 1, whichever is higher) take +1 ongoing.
+<b>Kill ‘Em All</b> <i>Requires: Appetite for Destruction</i> Take another move fromt he Fighter, Bard, or Thief class list. You may not take multiclass moves from those classes.
+<b>War Cry</b> Enter the battle with a show of force (roll+CHA): On a 10+ both, on a 7-9 one or the other - Your allies are rallied and take +1 forward / Your enemies feel fear and act accordingly.
+<b>Mark Of Might</b> Spend some uninterrupted time reflecting on your past glories: You may mark yourself with a symbol of your power (a long braid tied with bells, ritual scars or tattoos, etc.) Any intelligent mortal creature who sees this symbol knows instinctively that you are a force to be reckoned with and treats you appropriately.
+<b>More! Always More!</b> Satisfy an appetite to the extreme: You may choose to resolve it. Cross it off the list and mark XP. Choose a new appetite from the list or write your own.
+<b>The One Who Knocks</b> Defy Danger: 12+ you turn the danger back on itself, the GM will describe how.
+<b>Healthy Distrust</b> Whenever the unclean magic wielded by mortal men causes you to Defy Danger, treat any result of 6- as a 7–9.
+<b>For The Blood God</b> Choose something your gods value. When you sacrifice those things as per your rites and rituals, (roll+WIS): 10+ GM will grant you insight or a boon to help you, 7-9 the sacrifice is not enough and your gods take of your flesh as well but still grant you some insight or boon. On a miss, you earn the ire of the fickle spirits.

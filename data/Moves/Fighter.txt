@@ -1,0 +1,30 @@
+<h3>Race Moves</h3>
+<b>Dwarf</b> Share a drink with someone: you may parley with them using CON instead of CHA.
+<b>Elf</b> Choose one weapon — you can always treat weapons of that type as if they had the precise tag.
+<b>Halfling</b> Defy Danger and use your small size to your advantage: take +1.
+<b>Human</b> Once per battle you may reroll a single damage roll (yours or someone else’s).
+<h3>Starting Moves</h3>
+<b>Signature Weapon</b> Choose a base description, all are 2 weight:<ul><li>Sword</li><li>Axe</li><li>Hammer</li><li>Spear</li><li>Flail</li><li>Fists</li></ul>Choose a range that best fits your weapon:<ul><li>Hand</li><li>Reach</li><li>Close</li></ul>Choose two enhancements:<ul><li>Hooks and spikes. +1 damage, but +1 weight.</li><li>Sharp. +2 piercing.</li><li>Perfectly weighted. Add precise.</li><li>Serrated edges. +1 damage.</li><li>Glows in the presence of one type of creature, your choice.</li><li>Huge. Add messy and forceful.</li><li>Versatile. Choose an additional range.</li><li>Well-crafted. -1 weight.</li></ul>Choose a look:<ul><li>Ancient</li><li>Unblemished</li><li>Ornate</li><li>Blood-stained</li><li>Sinister</li></ul>
+<b>Bend Bars, Lift Gates</b> Use pure strength to destroy an inanimate obstacle (roll+STR): 10+, choose 3. 7-9 choose 2.<ul><li>It doesn’t take a very long time</li><li>Nothing of value is damaged</li><li>It doesn’t make an inordinate amount of noise</li><li>You can fix the thing again without a lot of effort</li></ul>
+<b>Armored</b> You ignore the clumsy tag on any armor you wear.
+<h3>Advanced Moves 2-10</h3>
+<b>Merciless</b> Deal damage: deal +1d4 damage.
+<b>Heirloom</b> Consult the spirits that reside within your signature weapon (roll+CHA): they will give you an insight relating to the current situation, and might ask you some questions in return. 10+, the GM will give you good detail. 7-9, the GM will give you an impression.
+<b>Improved Weapon</b> Choose one extra enhancement for your signature weapon.
+<b>Blacksmith</b> Have access to a forge: you can graft the magical powers of a weapon onto your signature weapon. This process destroys the magical weapon. Your signature weapon gains the magical powers of the destroyed weapon.
+<b>Iron Hide</b> You gain +1 armor.
+<b>Armor Mastery</b> Make your armor take the brunt of damage: the damage is negated but you must reduce the armor value of your armor or shield (your choice) by 1. The value is reduced each time you make this choice. If the reduction leaves the item with 0 armor it is destroyed.
+<b>Seeing Red</b> Discern Realities during combat: you take +1.
+<b>Interrogator</b> Parley using threats of violence as leverage: you may use STR instead of CHA.
+<b>Scent Of Blood</b> Hack & Slash: your next attack against that same foe deals +1d4 damage.
+<b>Multiclass Dabbler</b> Get one move from another class. Treat your level as one lower for choosing the move.
+<h3>Advanced Moves 6-10</h3>
+<b>Bloodthirsty</b> <i>Replaces: Merciless</i> Deal damage: deal +1d8 damage.
+<b>Through Death’s Eyes</b> Go into battle (roll+WIS): 10+, name someone who will live and someone who will die. 7-9, name someone who will live or someone who will die. Name NPCs, not player characters. The GM will make your vision come true, if it’s even remotely possible. 6- you see your own death and consequently take -1 ongoing throughout the battle.
+<b>Eye For Weaponry</b> Look over an enemy’s weaponry: ask the GM how much damage they do.
+<b>Superior Warrior</b> Hack & Slash: on a 12+ you deal your damage, avoid their attack, and impress, dismay, or frighten your enemy.
+<b>Steel Hide</b> <i>Replaces: Iron Hide</i> You gain +2 armor.
+<b>Armored Perfection</b> <i>Replaces: Armor Mastery</i> Let your armor take the brunt of damage: the damage is negated and you take +1 forward against the attacker, but you must reduce the armor value of your armor or shield (your choice) by 1. The value is reduced each time you make this choice. If the reduction leaves the item with 0 armor it is destroyed.
+<b>Evil Eye</b> Enter combat (roll+CHA): 10+, hold 2. 7-9, hold 1. Spend your hold to make eye contact with an NPC present, who freezes or flinches and can’t act until you break it off. 6-, your enemies immediately identify you as their biggest threat.
+<b>Taste Of Blood</b> <i>Replaces: Scent Of Blood</i> Hack & Slash: your next attack against that same foe deals +1d8 damage.
+<b>Multiclass Initiate</b> Get a move from another class. Treat your level as one lower for choosing the move.

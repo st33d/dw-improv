@@ -1,0 +1,29 @@
+<h3>Race Moves</h3>
+<b>Human</b> Pray for guidance, even for a moment and ask “what here is evil?”: the GM will tell you, honestly.
+<h3>Starting Moves</h3>
+<b>Quest</b> Dedicate yourself to a mission through prayer and ritual cleansing: state what you set out to do:<ul><li>Slay ______ a great blight on the land.</li><li>Defend _____ from the iniquities that beset them.</li><li>Discover the truth of ______</li></ul>Then choose up to two boons:<ul><li>An unwavering sense of direction to _____</li><li>Invulnerability to _____ (edged weapons, fire, enchantment, etc.)</li><li>A mark of divine authority.</li><li>Senses that pierce lies.</li><li>A voice that transcends language.</li><li>Freedom from hunger, thirst, and sleep.</li></ul>The GM will then tell you what vow or vows is required of you to maintain your blessing:<ul><li>Honor (forbidden: cowardly tactics and tricks)</li><li>Temperance (forbidden: gluttony in food, drink, and pleasure of the flesh)</li><li>Piety (required: observance of daily holy services)</li><li>Valor (forbidden: suffering an evil creature to live)</li><li>Truth (forbidden: lies)</li><li>Hospitality (required: comfort to those in need, no matter who they are</li></ul>
+<b>Lay On Hands</b> Touch someone, skin to skin, and pray for their well-being (roll+CHA): 10+ you heal 1d8 damage or remove one disease. 7–9, they are healed, but the damage or disease is transferred to you.
+<b>I Am The Law</b> Give an NPC an order based on your divine authority (roll+CHA): 7+, they choose one:<ul><li>Do what you say.</li><li>Back away cautiously, then flee.</li><li>Attack you.</li></ul>10+, you also take +1 forward against them. 6-, they do as they please and you take -1 forward against them.
+<b>Armored</b> You ignore the clumsy tag on armor you wear.
+<h3>Advanced Moves 2-10</h3>
+<b>Divine Favor</b> Dedicate yourself to a deity (name a new one or choose one that’s already been established). You gain the commune and cast a spell cleric moves. When you select this move, treat yourself as a cleric of level 1 for using spells. Every time you gain a level thereafter, increase your effective cleric level by 1.
+<b>Bloody Aegis</b> Take damage: you can grit your teeth and accept the blow. If you do you take no damage but instead suffer a debility of your choice. If you already have all six debilities you can’t use this move.
+<b>Smite</b> While on a Quest you deal +1d4 damage.
+<b>Holy Protection</b> You get +1 armor while on a Quest.
+<b>Voice Of Authority</b> Take +1 to order hirelings.
+<b>Hospitaller</b> When you heal an ally, you heal +1d8 damage.
+<b>Exterminatus</b> Speak aloud your promise to defeat an enemy: deal +2d4 damage against that enemy and -4 damage against anyone else. This effect lasts until the enemy is defeated. If you fail to defeat the enemy or give up the fight, you can admit your failure, but the effect continues until you find a way to redeem yourself.
+<b>Charge!</b> Lead the charge into combat: those you lead take +1 forward.
+<b>Staunch Defender</b> Defend: you always get +1 hold, even on a 6-.
+<b>Setup Strike</b> Hack & Slash: choose an ally. Their next attack against your target does +1d4 damage.
+<h3>Advanced Moves 6-10</h3>
+<b>Evidence Of Faith</b> <i>Requires: Divine Favor</i> See divine magic as it happens: you can ask the GM which deity granted the spell and its effects. Take +1 when acting on the answers.
+<b>Holy Smite</b> <i>Replaces: Smite</i> While on a Quest you deal +1d8 damage.
+<b>Ever Onward</b> <i>Replaces: Charge!</i> Lead the charge into combat: those you lead take +1 forward and +2 armor forward.
+<b>Impervious Defender</b> <i>Replaces: Staunch Defender</i> Defend: you always get +1 hold, even on a 6-. When you get a 12+ to defend instead of getting hold the nearest attacking creature is stymied giving you a clear advantage, the GM will describe it.
+<b>Perfect Knight</b> Quest: you choose three boons instead of two.
+<b>Tandem Strike</b> <i>Replaces: Setup Strike</i> Hack & Slash: choose an ally. Their next attack against your target does +1d4 damage and they take +1 forward against them.
+<b>Divine Protection</b> <i>Replaces: Holy Protection</i> You get +2 armor while on a Quest.
+<b>Divine Authority</b> <i>Replaces: Voice Of Authority</i> Take +1 to order hirelings. When you roll a 12+ the hireling transcends their moment of fear and doubt and carries out your order with particular effectiveness or efficiency.
+<b>Perfect Hospitaller</b> <i>Replaces: Hospitaller</i> Heal an ally: you heal +2d8 damage.
+<b>Indomitable</b> Suffer a debility (even through Bloody Aegis): take +1 forward against whatever caused it.

@@ -1,0 +1,30 @@
+<h3>Race Moves</h3>
+<b>Elf</b> Undertake A Perilous Journey through wilderness: whatever job you take you succeed as if you rolled a 10+.
+<b>Human</b> Make Camp in a dungeon or city: you don’t need to consume a ration.
+<h3>Starting Moves</h3>
+<b>Animal Companion</b> You have a supernatural connection with a loyal animal. You can’t talk to it per se but it always acts as you wish it to. Name your animal companion. Choose a species. Choose a base:<ul><li>Ferocity +2, Cunning +1, Instinct +1, 1 Armor</li><li>Ferocity+2, Cunning +2, Instinct +1, 0 Armor</li><li>Ferocity +1, Cunning +2, Instinct +1, 1 Armor</li><li>Ferocity +3, Cunning +1, Instinct +2, 1 Armor</li></ul>Choose as many strengths as its Ferocity. Your animal companion is trained to fight humanoids, choose as many additional trainings as its Cunning. Choose as many weaknesses as its Instinct.
+<b>Hunt & Track</b> Follow a trail of clues left behind by passing creatures (roll+WIS): 7+, you follow the creature’s trail until there’s a significant change in its direction or mode of travel. 10+, you also choose 1:<ul><li>Gain a useful bit of information about your quarry, the GM will tell you what</li><li>Determine what caused the trail to end.</li></ul>
+<b>Called Shot</b> Attack a defenseless or surprised enemy at range: you can choose to deal your damage or name your target and (roll+DEX):<ul><li>Head. 10+: As 7–9, plus your damage. 7-9: They do nothing but stand and drool for a few moments.</li><li>Arms. 10+: As 7-9, plus your damage. 7-9: They drop anything they’re holding.</li><li>Legs. 10+: As 7-9, plus your damage. 7-9: They’re hobbled and slow moving.</li></ul>
+<b>Command</b> Work with your animal companion on something it’s trained in:<ul><li>and you attack the same target, add its ferocity to your damage</li><li>and you track, add its cunning to your roll</li><li>and you take damage, add its armor to your armor</li><li>and you Discern Realities, add its cunning to your roll</li><li>and you Parley, add its cunning to your roll</li><li>and someone Interferes with you, add its instinct to their roll</li></ul>
+<h3>Advanced Moves 2-10</h3>
+<b>Half-elven</b> Somewhere in your lineage lies mixed blood and it begins to show its presence. You gain the elf starting move if you took the human one at character creation or vice versa. <i>You may take this move only if it is your first advancement.</i>
+<b>Wild Empathy</b> You can speak with and understand animals.
+<b>Familiar Prey</b> Spout Lore about a monster: you use WIS instead of INT.
+<b>Viper’s Strike</b> Strike an enemy with two weapons at once: add an extra 1d4 damage for your off-hand strike.
+<b>Camouflage</b> Keep still in natural surroundings: enemies never spot you until you make a movement.
+<b>Man’s Best Friend</b> Allow your animal companion to take a blow that was meant for you: the damage is negated and your animal companion’s ferocity becomes 0. If its ferocity is already 0 you can’t use this ability. When you have a few hours of rest with your animal companion its ferocity returns to normal.
+<b>Blot Out The Sun</b> Volley: you may spend extra ammo before rolling. For each point of ammo spent you may choose an extra target. Roll once and apply damage to all targets.
+<b>Well-trained</b> Choose another training for your animal companion.
+<b>God Amidst The Wastes</b> Dedicate yourself to a deity (name a new one or choose one that’s already been established). You gain the commune and cast a spell cleric moves. When you select this move, treat yourself as a cleric of level 1 for using spells. Every time you gain a level thereafter, increase your effective cleric level by 1.
+<b>Follow Me</b> Undertake A Perilous Journey: You can take two roles. You make a separate roll for each.
+<b>A Safe Place</b> Set the watch for the night: everyone takes +1 to Take Watch.
+<h3>Advanced Moves 6-10</h3>
+<b>Wild Speech</b> <i>Replaces: Wild Empathy</i> You can speak with and understand any non-magical, non-planar creature.
+<b>Hunter’s Prey</b> <i>Replaces: Familiar Prey</i> Spout Lore about a monster: you use WIS instead of INT. On a 12+, in addition to the normal effects, you get to ask the GM any one question about the subject.
+<b>Viper’s Fangs</b> <i>Replaces: Viper’s Strike</i> Strike an enemy with two weapons at once: add an extra 1d8 damage for your off-hand strike.
+<b>Smaug’s Belly</b> Know your target’s weakest point: your arrows have 2 piercing.
+<b>Strider</b> <i>Replaces: Follow Me</i> Undertake a perilous journey: you can take two roles. Roll twice and use the better result for both roles.
+<b>A Safer Place</b> <i>Replaces: A Safe Place</i> Set the watch for the night: everyone takes +1 to take watch. After a night in camp when you set the watch everyone takes +1 forward.
+<b>Observant</b> Hunt and track: on a hit you may also ask one question about the creature you are tracking from the discern realities list for free.
+<b>Special Trick</b> Choose a move from another class. So long as you are working with your animal companion you have access to that move.
+<b>Unnatural Ally</b> Your animal companion is a monster, not an animal. Describe it. Give it +2 ferocity and +1 instinct, plus a new training.

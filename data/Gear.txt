@@ -1,0 +1,101 @@
+<h3>Weapons</h3>
+<b>Ragged Bow</b> near, 15 coins, 2 weight
+<b>Fine Bow</b> near, far, 60 coins, 2 weight
+<b>Hunter’s Bow</b> near, far, 100 coins, 1 weight
+<b>Crossbow</b> near, +1 damage, reload, 35 coins, 3 weight
+<b>Bundle of Arrows</b> 3 ammo, 1 coin, 1 weight
+<b>Elven Arrows</b> 4 ammo, 20 coins, 1 weight
+<b>Club, Shillelagh</b> close, 1 coin, 2 weight
+<b>Staff</b> close, two-handed, 1 coin, 1 weight
+<b>Dagger, Shiv, Knife</b> hand, 2 coins, 1 weight
+<b>Throwing Dagger</b> thrown, near, 1 coin, 0 weight
+<b>Short Sword, Axe, Warhammer, Mace</b> close, 8 coins, 1 weight
+<b>Spear</b> reach, thrown, near, 5 coins, 1 weight
+<b>Long Sword, Battle Axe, Flail</b> close, +1 damage, 15 coins, 2 weight
+<b>Halberd</b> reach, +1 damage, two-handed, 9 coins, 2 weight
+<b>Rapier</b> close, precise, 25 coins, 1 weight
+<b>Dueling Rapier</b> close, 1 piercing, precise, 50 coins, 2 weight
+<h3>Armor</h3>
+<b>Leather, Chainmail</b> 1 armor, worn, 10 coins, 1 weight
+<b>Scale Mail</b> 2 armor, worn, clumsy, 50 coins, 3 weight
+<b>Plate</b> 3 armor, worn, clumsy, 350 coins, 4 weight
+<b>Shield</b> +1 armor, 15 coins, 2 weight
+<h3>Dungeon Gear</h3>
+<b>Adventuring Gear</b> 5 uses, 20 coins, 1 weight: <i>Adventuring gear is a collection of useful mundane items such as chalk, poles, spikes, ropes, etc. When you rummage through your adventuring gear for some useful mundane item, you find what you need and mark off a use.</i>
+<b>Bandages</b> 3 uses, slow, 5 coins, 0 weight: <i>When you have a few minutes to bandage someone else’s wounds, heal them of 4 damage and expend a use.</i>
+<b>Poultices and Herbs</b> 2 uses, slow, 10 coins, 1 weight: <i>When you carefully treat someone’s wounds with poultices and herbs, heal them of 7 damage and expend a use.</i>
+<b>Healing Potion</b> 50 coins, 0 weight: <i>When you drink an entire healing potion, heal yourself of 10 damage or remove one debility, your choice.</i>
+<b>Keg of Dwarven Stout</b> 10 coins, 4 weight: <i>When you open a keg of dwarven stout and let everyone drink freely, take +1 to your Carouse roll. If you drink a whole keg yourself, you are very, very drunk.</i>
+<b>Bag of Books</b> 5 uses, 10 coins, 2 weight: <i>When your bag of books contains just the right book for the subject you’re spouting lore on, consult the book, mark off a use, and take +1 to your roll.</i>
+<b>Antitoxin</b> 10 coins, 0 weight: <i>When you drink antitoxin, you’re cured of one poison affecting you.</i>
+<b>Dungeon Rations</b> Ration, 5 uses, 3 coins, 1 weight: <i>Not tasty, but not bad either.</i>
+<b>Personal Feast</b> Ration, 1 use, 10 coins, 1 weight: <i>Ostentatious to say the least.</i>
+<b>Dwarven Hardtack</b> Requires Dwarf, ration, 7 uses, 3 coins, 1 weight: <i>Dwarves say it tastes like home. Everyone else says it tastes like home, if home is a hog farm, and on fire.</i>
+<b>Elven Bread</b> Ration, 7 uses, 10 coins, 1 weight: <i>Only the greatest of elf-friends are treated to this rare delicacy.</i>
+<b>Halfling Pipeleaf</b> 6 uses, 5 coins, 0 weight: <i>When you share halfling pipeleaf with someone, expend two uses and take +1 forward to parley with them.</i>
+<h3>Poisons</h3>
+<b>Oil of Tagit</b> Dangerous, applied, 15 coins, 0 weight: <i>The target falls into a light sleep.</i>
+<b>Bloodweed</b> Dangerous, touch, 12 coins, 0 weight: <i>Until cured, whenever the afflicted rolls damage, they roll an additional d4 and subtract that result from their normal damage.</i>
+<b>Goldenroot</b> Dangerous, applied, 20 coins, 0 weight: <i>The target treats the next creature they see as a trusted ally, until proved otherwise.</i>
+<b>Serpent’s Tears</b> Dangerous, touch, 10 coins, 0 weight: <i>Anyone dealing damage against the target rolls twice and takes the better result.</i>
+<h3>Services</h3>
+<b>A week’s stay at a peasant inn</b> 14-Charisma coins
+<b>A week’s stay at a civilized inn</b> 30-Charisma coins
+<b>A week’s stay at the fanciest inn in town</b> 43-Charisma coins
+<b>A week’s unskilled mundane labor</b> 10 coins
+<b>A month’s pay for enlistment in an army</b> 30 coins
+<b>A custom item from a blacksmith</b> Base Item + 50 coins
+<b>A night’s “companionship”</b> 20-Charisma coins
+<b>An evening of song and dance</b> 18-Charisma coins
+<b>Escort for a day along a bandit-infested road</b> 20 coins
+<b>Escort for a day along a monster-infested road</b> 54 coins
+<b>A run-of-the-mill killing</b> 5 coins
+<b>An assassination</b> 120 coins
+<b>Healing from a chirurgeon</b> 5 coins
+<b>A month’s prayers for the departed</b> 1 coin
+<b>Repairs to a mundane item</b> 25% of the item’s cost
+<h3>Meals</h3>
+<b>A hearty meal for one</b> 1 coin
+<b>A poor meal for a family</b> 1 coin
+<b>A feast</b> 15 coins per person
+<h3>Transport</h3>
+<b>Cart and Donkey, sworn to carry your burdens</b> 50 coins, load 20
+<b>Horse</b> 75 coins, load 10
+<b>Warhorse</b> 400 coins, load 12
+<b>Wagon</b> 150 coins, load 40
+<b>Barge</b> 50 coins, load 15
+<b>River boat</b> 150 coins, load 20
+<b>Merchant ship</b> 5,000 coins, load 200
+<b>War ship</b> 20,000 coins, load 100
+<b>Passage on a safe route</b> 1 coin
+<b>Passage on a tough route</b> 10 coins
+<b>Passage on a dangerous route</b> 100 coins
+<h3>Land and Buildings</h3>
+<b>A hovel</b> 20 coins
+<b>A cottage</b> 500 coins
+<b>A house</b> 2,500 coins
+<b>A mansion</b> 50,000 coins
+<b>A keep</b> 75,000 coins
+<b>A castle</b> 250,000 coins
+<b>A grand castle</b> 1,000,000 coins
+<b>A month’s upkeep</b> 1% of the cost
+<h3>Bribes</h3>
+<b>A peasant dowry</b> 20-Charisma coins
+<b>“Protection” for a small business</b> 100-Charisma coins
+<b>A government bribe</b> 50-Charisma coins
+<b>A compelling bribe</b> 80-Charisma coins
+<b>An offer you can’t refuse</b> 500-Charisma coins
+<h3>Gifts and Finery</h3>
+<b>A peasant gift</b> 1 coin
+<b>A fine gift</b> 55 coins
+<b>A noble gift</b> 200 coins
+<b>A ring or cameo</b> 75 coins
+<b>Finery</b> 105 coins
+<b>A fine tapestry</b> 350+ coins
+<b>A crown fit for a king</b> 5,000 coins
+<h3>Hoards</h3>
+<b>A goblin’s stash</b> 2 coins
+<b>A lizardman’s trinkets</b> 5 coins
+<b>A “priceless” sword</b> 80 coins
+<b>An orc warchief’s tribute</b> 250 coins
+<b>A dragon’s mound of coins and gems</b> 130,000 coins

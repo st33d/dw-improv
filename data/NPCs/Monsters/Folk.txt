@@ -1,0 +1,18 @@
+<b>Acolyte</b> Instinct: To serve dutifully<ul><li>Follow dogma</li><li>Offer eternal reward for mortal deeds</li></ul>
+<b>Adventurer</b> Horde, Intelligent. Sword (d6 damage); 3 HP; 1 Armor, Close, <i>Special Qualities: Endless enthusiasm</i>, Instinct: To adventure or die trying<ul><li>Go on a fool’s errand</li><li>Act impulsively</li><li>Share tales of past exploits</li></ul>
+<b>Bandit</b> Horde, Intelligent, Organized. Dirk (d6 damage); 3 HP; 1 Armor, Close, Instinct: To rob<ul><li>Steal something</li><li>Demand tribute</li></ul>
+<b>Bandit King</b> Solitary, Intelligent, Organized. Trusty knife (b[2d10] damage); 12 HP; 1 Armor, Close, Instinct: To lead<ul><li>Make a demand</li><li>Extort</li><li>Topple power</li></ul>
+<b>Fool</b> Instinct: To mock<ul><li>Expose injustice</li><li>Play a trick</li></ul>
+<b>Guardsman</b> Group, Intelligent, Organized. Spear (d8 damage); 6 HP; 1 Armor, Close, Reach, Instinct: To do as ordered<ul><li>Uphold the law</li><li>Make a profit</li></ul>
+<b>Halfling Thief</b> Solitary, Small, Intelligent, Stealthy, Devious. Dagger (w[2d8] damage); 12 HP; 1 Armor, Close, Instinct: To live a life of stolen luxury<ul><li>Steal</li><li>Put on the appearance of friendship</li></ul>
+<b>Hedge Wizard</b> Magical, Instinct: To learn<ul><li>Cast almost the right spell (for a price)</li><li>Make deals beyond their ken</li></ul>
+<b>High Priest</b> Instinct: To lead<ul><li>Set down divine law</li><li>Reveal divine secrets</li><li>Commission divine undertakings</li></ul>
+<b>Hunter</b> Group, Intelligent. Ragged bow (d6 damage); 6 HP; 1 Armor, Near, Far, Instinct: To survive<ul><li>Bring back news from the wilds</li><li>Slay a beast</li></ul>
+<b>Knight</b> Solitary, Intelligent, Organized, Cautious. Sword (b[2d10] damage); 12 HP; 4 Armor, Close, Instinct: To live by a code<ul><li>Make a moral stand</li><li>Lead soldiers into battle</li></ul>
+<b>Merchant</b> Instinct: To profit<ul><li>Propose a business venture</li><li>Offer a “deal”</li></ul>
+<b>Noble</b> Instinct: To rule<ul><li>Issue an order</li><li>Offer a reward</li></ul>
+<b>Peasant</b> Instinct: To get by<ul><li>Plead for help</li><li>Offer a simple reward and gratitude</li></ul>
+<b>Rebel</b> Horde, Intelligent, Organized. Axe (d6 damage); 3 HP; 1 Armor, Close, Instinct: To upset order<ul><li>Die for a cause</li><li>Inspire others</li></ul>
+<b>Soldier</b> Horde, Intelligent, Organized. Spear (d6 damage); 3 HP; 1 Armor, Close, Reach, Instinct: To fight<ul><li>March into battle</li><li>Fight as one</li></ul>
+<b>Spy</b> Instinct: To infiltrate<ul><li>Report the truth</li><li>Double cross</li></ul>
+<b>Tinkerer</b> Instinct: To create<ul><li>Offer an oddity at a price</li><li>Spin tales of great danger and reward in far-off lands</li></ul>

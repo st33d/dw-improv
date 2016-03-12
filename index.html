@@ -1,0 +1,40 @@
+<!doctype html>
+<html> <!-- manifest="manifest.appcache">-->
+	<head>
+		<meta charset="utf-8">
+		<title>Dungeon World Improv</title>
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+		<script type="text/javascript">
+		// Check if a new cache is available on page load.
+		// window.addEventListener('load', function(e) {
+		// 	window.applicationCache.addEventListener('updateready', function(e) {
+		// 		if(window.applicationCache.status == window.applicationCache.UPDATEREADY){
+		// 			window.applicationCache.swapCache();
+		// 			window.location.reload();
+		// 			console.log("appcache updated");
+		// 		}
+		// 	}, false);
+		// }, false);
+		</script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<h2>Dungeon World Improv</h2>
+		<span class="small">An indie tool for </span><a class="small" href="http://www.dungeon-world.com/">Dungeon World</a><span class="small">. Contains text from </span><a class="small" href="http://angband.oook.cz/steamband/Tricks.pdf">Tricks, Empty Rooms, and Basic Trap Design</a><span class="small"> by Courtney C. Campbell</span>
+		<div class="Container">
+		<div class="Folder" id="folder">Loading...</div>
+		<div class="File" id="file"><h3>Select a page from the folders on the left</h3></div>
+		</div>
+		<div class="Footer"></div>
+		<script src="js/filth.js"></script>
+		<script src="js/markov.js"></script>
+		<script src="js/rng.js"></script>
+		<script src="js/ref.js"></script>
+		<script src="js/menu.js"></script>
+		<script>
+			Menu.init($("#folder"), $("#file"));
+		</script>
+			
+		
+	</body>
+</html>
