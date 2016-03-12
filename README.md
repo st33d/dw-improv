@@ -16,7 +16,6 @@ Contains text from:
 
 **Issues**
 
-* Web caching isn't enabled yet (still want to finish off a few more features).
 * My CSS skills suck balls - if anyone who knows what they're doing wants to look at my style.css then I'm all ears. Especially regarding getting #folder to be fixed width and sit on the left of #file whilst the rest stay stretchy. Oh, and mobile, please help.
 * Slightly worried about wholesale reproducing text so I'm wary of crossing the line (may have with Knacks and Instincts generator based on Appendix 4).
 

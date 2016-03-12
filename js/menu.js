@@ -20,6 +20,8 @@ var Menu = {
 		var pick3 = Menu.pick3;
 		
 		this.root = new Ref("data", 0);
+		var cacheUpdate = parseInt(sessionStorage.getItem("appcache_update"));
+		if(cacheUpdate) localStorage.clear();
 		this.root.load({
 			"Moves":{
 				Basic:true, Special:true, Barbarian:true, Bard:true, Cleric:true,
@@ -40,7 +42,7 @@ var Menu = {
 			Effects:pick20,
 			Plots:pick3,
 			Tags:true
-		});
+		}, cacheUpdate);
 	},
 	
 	// called after all files are loaded
@@ -61,7 +63,6 @@ var Menu = {
 		
 		this.chosen = r;
 		
-		//console.log("open: "+r.id());
 		if(r.func){
 			this.file$.html(
 				this.dataList(r.func(r.data, r.name), r.name)

@@ -8,9 +8,8 @@ var Ref = function(name, parent){
 	this.backup = null;
 }
 
-Ref.prototype.load = function(obj){
+Ref.prototype.load = function(obj, cacheUpdate){
 	var r;
-	var cacheUpdate = parseInt(sessionStorage.getItem("appcache_update"));
 	
 	for(var k in obj){
 		var v = obj[k];
@@ -26,7 +25,8 @@ Ref.prototype.load = function(obj){
 			// load data
 			Menu.loading++;
 			var id = r.id();
-			r.backup = localStorage.getItem(id);
+			var backup = localStorage.getItem(id);
+			if(backup) r.backup = JSON.parse(backup);
 			
 			if(cacheUpdate || !r.backup){
 				$.ajax({
@@ -46,7 +46,7 @@ Ref.prototype.load = function(obj){
 						var id = this.id();
 						this.data = data.split("\n");
 						console.log("loaded "+id);
-						localStorage.setItem(id, this.data);
+						localStorage.setItem(id, JSON.stringify(this.data));
 						if(--Menu.loading == 0) Menu.onLoaded();
 					}
 				});
@@ -56,7 +56,7 @@ Ref.prototype.load = function(obj){
 				--Menu.loading;
 			}
 		} else if(v){
-			r.load(v);
+			r.load(v, cacheUpdate);
 		}
 		if(v) this.contents.push(r);
 	}
