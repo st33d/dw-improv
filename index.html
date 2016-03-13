@@ -13,7 +13,7 @@
 					window.location.reload();
 					console.log("appcache updated");
 					sessionStorage.setItem("appcache_update", 1);
-					
+
 				}
 			}, false);
 		}, false);
@@ -22,20 +22,23 @@
 	</head>
 	<body>
 		<h2>Dungeon World Improv</h2>
-		<span class="small">An indie tool for <a href="http://www.dungeon-world.com/">Dungeon World</a> - <a href="javascript:$('#sources').toggle();">Sources:</a></span>
-		<div id="sources" class="small" style="display: none;">
-			<p>
-			<a  href="http://www.dungeonworldsrd.com/">Dungeon World SRD</a><br />
-			<a  href="http://angband.oook.cz/steamband/Tricks.pdf">Tricks, Empty Rooms, and Basic Trap Design</a> by Courtney C. Campbell<br />
-			<a  href="http://www222.pair.com/sjohn/blueroom/plots.htm">The Big List of RPG Plots</a> by S. John Ross<br />
-			
-			<p>This project is open source on <a href="https://github.com/st33d/dw-improv">GitHub.</a>
+
+		<div class="small">An indie tool for <a href="http://www.dungeon-world.com/" target="_blank">Dungeon World</a> - <a href="javascript:$('#sources').toggle();">Sources:</a>
+			<div id="sources" class="small" style="display: none;">
+				<p>
+				<a  href="http://www.dungeonworldsrd.com/">Dungeon World SRD</a><br />
+				<a  href="http://angband.oook.cz/steamband/Tricks.pdf">Tricks, Empty Rooms, and Basic Trap Design</a> by Courtney C. Campbell<br />
+				<a  href="http://www222.pair.com/sjohn/blueroom/plots.htm">The Big List of RPG Plots</a> by S. John Ross<br />
+
+				<p>This project is open source on <a href="https://github.com/st33d/dw-improv">GitHub.</a>
+			</div>
 		</div>
-		<div class="Container">
-		<div class="Folders" id="folder">Loading...</div>
-		<div class="Files" id="file"><h3>Select a page from the folders on the left</h3></div>
+
+		<div class="container">
+			<div id="folder">Loading...</div>
+			<div id="file"><h3>Select a page from the folders on the left</h3></div>
 		</div>
-		<div class="Footer"></div>
+
 		<script src="js/filth.js"></script>
 		<script src="js/markov.js"></script>
 		<script src="js/rng.js"></script>
@@ -44,7 +47,5 @@
 		<script>
 			Menu.init($("#folder"), $("#file"));
 		</script>
-			
-		
 	</body>
 </html>

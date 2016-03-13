@@ -10,24 +10,24 @@ var Ref = function(name, parent){
 
 Ref.prototype.load = function(obj, cacheUpdate){
 	var r;
-	
+
 	for(var k in obj){
 		var v = obj[k];
 		r = new Ref(k, this);
-		
+
 		if(typeof v === 'function'){
 			// function acting on data-set
 			r.func = v;
 			v = true;
 		}
-			
+
 		if(v === true){
 			// load data
 			Menu.loading++;
 			var id = r.id();
 			var backup = localStorage.getItem(id);
 			if(backup) r.backup = JSON.parse(backup);
-			
+
 			if(cacheUpdate || !r.backup){
 				$.ajax({
 					url: r.url(),
@@ -69,7 +69,7 @@ Ref.prototype.html = function(isRoot){
 		if(isRoot){
 			str = "<ul>";
 		} else {
-			str = "<li><b>"+this.method()+"</b><ul id='"+this.id()+"' style='display: none;'>";
+			str = "<li class='header'>"+this.method()+"<ul id='"+this.id()+"' style='display: none;'>";
 		}
 		for(var i = 0; i < this.contents.length; i++){
 			str += this.contents[i].html();
@@ -87,7 +87,8 @@ Ref.prototype.method = function(){
 		"<a href='javascript:Menu.open(\""+
 		this.id()+
 		"\");'"+
-		(this.contents.length ? " class='folder'" : "")+
+		(this.data != null ? " class='item'" : "")+
+		(this.data != null ? " id='"+this.id()+"'" : "")+
 		">"+
 		this.name+
 		(this.func != null ? " "+Rng.symbol() : "")+
