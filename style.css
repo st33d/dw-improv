@@ -1,82 +1,144 @@
-body {
+/***************************************/
+/*             PAGE LAYOUT             */
+/***************************************/
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     background-color: #fefefe;
     color: #333;
     font-family: "Georgia";
     font-size: 16px;
-	padding: 10px;
-	line-height: 1.2;
-	font-weight: normal;
 }
+
 a {
-    color: #800;
-	text-decoration: none;
-	font-weight: bold;
+  color: #800;
+  font-weight: bold;
+  text-decoration: none;
 }
 
+a.active,
 a:hover {
-    color: #fff;
-    background-color: #800;
-}
-
-.item{
-    background-color: #fff;
-}
-.small{
-    background-color: #fff;
-    font-size: smaller;
+  background-color: #800;
+  color: #fff;
+  display: inline-block;
 }
 
 ul {
-    list-style-position: inside;
-    padding-left: 3px;
-    margin: 3px;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
 }
+
 li {
-    margin: 5px;
+  margin: 0;
 }
-h2{
-    margin: 3px;
-    padding: 0px;
+
+h2 {
+  margin: 10px 0;
+  padding: 0px;
 }
-h3{
-    background-color: #eee;
-    margin: 3px;
-    padding: 8px;
+
+h3 {
+  background-color: #eee;
+  margin: 0 0 10px 0;
+  padding: 5px 10px;
 }
-.Container{
-    height: 95%;
+
+header, footer {
+    width: 100%;
+    position: fixed;
+    /*background-color: #fcc;*/
 }
-html,body
-{
-    margin:0;
-    height: 95%;
+
+footer {
+  bottom: 0;
+  height: 10px;
 }
-.Boxed{
-    border: solid;
-    border-width: thin;
-    border-color: #666;
+
+#container {
+    position: absolute;
+    top: 60px;
+    bottom: 10px;
+    width: 100%;
 }
-.folder{
-    background-color: #eee;
+
+#folder, #file {
+    height: 100%;
+    /*background-color: #ccf;*/
 }
-.Folders{
+/***************************************/
+/*            HEADER SECTION           */
+/***************************************/
+header {
+  top: 0;
+  height: 60px;
+}
+
+.small {
+  font-size: smaller;
+}
+
+.small a {
+  font-size: smaller;
+  padding: 0px 2px;
+}
+/***************************************/
+/*            FOLDER SECTION           */
+/***************************************/
+#folder {
+    width: 200px;
+    margin-left: 10px;
+    float: left;
+    overflow-y: scroll;
     font-size: larger;
-    border: solid;
-    border-width: thin;
-    border-color: #666;
-    width: 20%;
-    height: 100%;
-    overflow-y: scroll;
-    float: left;
-    display: table-row;
 }
-.Files{
-    border: solid;
-    border-width: thin;
-    border-color: #666;
-    width: 79%; /* ???  reacting to the border? */
-    height: 100%;
+
+#folder ul {
+  list-style-type: none;
+  margin: 0px 0px;
+}
+
+#folder li {
+  margin: 0;
+}
+
+#folder li a {
+  display: block;
+  padding: 5px;
+}
+
+#folder .header,
+#folder .header .header {
+  background: #eeeeee;
+}
+#folder .close{
+  text-align: center;
+}
+
+#folder .header li {
+  background: #ffffff;
+}
+/***************************************/
+/*            FILE SECTION             */
+/***************************************/
+#file {
+    margin: 0px 10px 0px 210px;
+    width: auto;
     overflow-y: scroll;
-    float: left;
-    display: table-row;
+}
+#file b {
+  display: block;
+}
+#file li {
+  margin: 10px 10px;
+}
+.passage{
+  list-style-type: none;
+}
+#file li li {
+  list-style-type: disc;
+  margin: 10px 15px;
 }

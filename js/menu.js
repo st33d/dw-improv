@@ -68,9 +68,13 @@ var Menu = {
 				this.dataList(r.func(r.data, r.name), r.name)
 			);
 			this.file$.scrollTop(0);
+			$('.item').removeClass('active');
+			$('#' + url).addClass('active');
 		} else if(r.contents.length){
 			$("#"+r.id()).toggle();
 		} else if(r.data){
+			$('.item').removeClass('active');
+			$('#' + url).addClass('active');
 			this.file$.html(this.dataList(r.data, r.name));
 			this.file$.scrollTop(0);
 		} else {
@@ -102,8 +106,12 @@ var Menu = {
 		str += "<ul>";
 		for (var i = 0; i < data.length; i++) {
 			//console.log(data[i]);
-			if(data[i].substr(0, 3) == "<h3") str += data[i];
-			else str += "<li>"+data[i]+"</li>";
+			var lead = data[i].substr(0, 3);
+			switch(lead){
+				case "<h3": str += data[i]; break;
+				case "<b>": str += "<li class='passage'>"+data[i]+"</li>"; break;
+				default: str += "<li>"+data[i]+"</li>"; break;
+			}
 		};
 		str += "</ul>";
 		return str;

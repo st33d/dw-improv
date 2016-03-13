@@ -10,24 +10,24 @@ var Ref = function(name, parent){
 
 Ref.prototype.load = function(obj, cacheUpdate){
 	var r;
-	
+
 	for(var k in obj){
 		var v = obj[k];
 		r = new Ref(k, this);
-		
+
 		if(typeof v === 'function'){
 			// function acting on data-set
 			r.func = v;
 			v = true;
 		}
-			
+
 		if(v === true){
 			// load data
 			Menu.loading++;
 			var id = r.id();
 			var backup = localStorage.getItem(id);
 			if(backup) r.backup = JSON.parse(backup);
-			
+
 			if(cacheUpdate || !r.backup){
 				$.ajax({
 					url: r.url(),
@@ -65,33 +65,40 @@ Ref.prototype.load = function(obj, cacheUpdate){
 
 Ref.prototype.html = function(isRoot){
 	var str = "";
+	var m = this.method;
 	if(this.contents.length){
 		if(isRoot){
 			str = "<ul>";
 		} else {
-			str = "<li><b>"+this.method()+"</b><ul id='"+this.id()+"' style='display: none;'>";
+			str = "<li class='header'>"+
+				this.method(this.name, "\u279b")+
+				"<ul id='"
+				+this.id()
+				+"' style='display: none;'>";
 		}
 		for(var i = 0; i < this.contents.length; i++){
 			str += this.contents[i].html();
 		}
+		if(!isRoot) str += "<li class='close'>"+this.method("^")+"</li>";
 		str = str + "</ul>";
 		if(!isRoot) str += "</li>";
 		return str;
 	} else {
-		return "<li"+">"+this.method()+"</li>";
+		return "<li"+">"+this.method(this.name, (this.func != null ? Rng.symbol() : null))+"</li>";
 	}
 }
 
-Ref.prototype.method = function(){
+Ref.prototype.method = function(name, symbol){
+	name = name || this.name;
 	var str =
 		"<a href='javascript:Menu.open(\""+
 		this.id()+
 		"\");'"+
-		(this.contents.length ? " class='folder'" : "")+
+		(this.data != null ? " class='item'" : "")+
+		(this.data != null ? " id='"+this.id()+"'" : "")+
 		">"+
-		this.name+
-		(this.func != null ? " "+Rng.symbol() : "")+
-		(this.contents.length ? " "+" \u279b" : "")+
+		name+
+		(symbol ? " "+symbol : "")+
 		"</a>";
 	return str;
 }
