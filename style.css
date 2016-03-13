@@ -1,82 +1,147 @@
+/***************************************/
+/*             PAGE LAYOUT             */
+/***************************************/
+
+html {
+  margin: 0;
+}
+
 body {
-    background-color: #fefefe;
-    color: #333;
-    font-family: "Georgia";
-    font-size: 16px;
+  background-color: #fefefe;
+  color: #333;
+  font-family: "Georgia";
+  font-size: 16px;
+  margin: 0;
 	padding: 10px;
 	line-height: 1.2;
 	font-weight: normal;
 }
+
 a {
-    color: #800;
+  color: #800;
+  font-weight: bold;
 	text-decoration: none;
-	font-weight: bold;
 }
 
+a.active,
 a:hover {
-    color: #fff;
-    background-color: #800;
-}
-
-.item{
-    background-color: #fff;
-}
-.small{
-    background-color: #fff;
-    font-size: smaller;
+  background-color: #800;
+  color: #fff;
+  display: inline-block;
 }
 
 ul {
-    list-style-position: inside;
-    padding-left: 3px;
-    margin: 3px;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
 }
+
 li {
-    margin: 5px;
+  margin: 0;
 }
-h2{
-    margin: 3px;
-    padding: 0px;
+
+h2 {
+  margin: 10px 0;
+  padding: 0px;
 }
-h3{
-    background-color: #eee;
-    margin: 3px;
-    padding: 8px;
+
+h3 {
+  background-color: #eee;
+  margin: 0 0 10px 0;
+  padding: 5px 10px;
 }
-.Container{
-    height: 95%;
+
+
+/***************************************/
+/*            HEADER SECTION           */
+/***************************************/
+
+.small {
+  font-size: smaller;
 }
-html,body
-{
-    margin:0;
-    height: 95%;
+
+.small a {
+  font-size: smaller;
+  padding: 0px 2px;
 }
-.Boxed{
-    border: solid;
-    border-width: thin;
-    border-color: #666;
+
+.container{
+  margin-top: 20px;
 }
-.folder{
-    background-color: #eee;
+
+
+/***************************************/
+/*            FOLDER SECTION           */
+/***************************************/
+
+#folder {
+  display: inline-block;
+  margin-right: 20px;
+  width: 175px;
 }
-.Folders{
-    font-size: larger;
-    border: solid;
-    border-width: thin;
-    border-color: #666;
-    width: 20%;
-    height: 100%;
-    overflow-y: scroll;
-    float: left;
-    display: table-row;
+
+#folder ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-.Files{
-    border: solid;
-    border-width: thin;
-    border-color: #666;
-    width: 79%; /* ???  reacting to the border? */
-    height: 100%;
-    overflow-y: scroll;
-    float: left;
-    display: table-row;
+
+#folder li {
+  margin: 0;
+}
+
+#folder .header,
+#folder .header .header {
+  background: #eeeeee;
+}
+
+#folder .header li {
+  background: #ffffff;
+}
+
+#folder li a {
+  display: block;
+  padding: 5px;
+}
+
+/***************************************/
+/*            FILE SECTION             */
+/***************************************/
+
+#file {
+  display: inline-block;
+  width: calc(100% - 200px);
+  vertical-align: top;
+}
+
+/* Not sure this will work on all browsers, but
+  it does look better */
+#file b {
+  display: block;
+}
+
+#file li {
+  list-style-type: none;
+  margin: 20px 10px;
+}
+
+#file li li {
+  list-style-type: disc;
+  margin: 10px 15px;
+}
+
+/***************************************/
+/*           MOBILE OVERRIDES          */
+/***************************************/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 500px) {
+  #folder {
+    margin-bottom: 30px;
+  }
+
+  #file, #folder {
+    display: block;
+    width: 100%;
+  }
 }

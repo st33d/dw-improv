@@ -68,9 +68,13 @@ var Menu = {
 				this.dataList(r.func(r.data, r.name), r.name)
 			);
 			this.file$.scrollTop(0);
+			$('.item').removeClass('active');
+			$('#' + url).addClass('active');
 		} else if(r.contents.length){
 			$("#"+r.id()).toggle();
 		} else if(r.data){
+			$('.item').removeClass('active');
+			$('#' + url).addClass('active');
 			this.file$.html(this.dataList(r.data, r.name));
 			this.file$.scrollTop(0);
 		} else {
