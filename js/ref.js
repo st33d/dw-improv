@@ -6,6 +6,7 @@ var Ref = function(name, parent){
 	this.data = null;
 	this.func = null;
 	this.backup = null;
+	this.render = null;
 }
 
 Ref.prototype.load = function(obj, cacheUpdate){
@@ -79,7 +80,15 @@ Ref.prototype.html = function(isRoot){
 		for(var i = 0; i < this.contents.length; i++){
 			str += this.contents[i].html();
 		}
-		if(!isRoot) str += "<li class='close'>"+this.method("^")+"</li>";
+		if(!isRoot){ // show close of folder and depth
+			var p = this.parent;
+			var depth = "*";
+			while(p){
+				p = p.parent;
+				if(p) depth += "*";
+			}
+			str += "<li class='close'>"+depth+"</li>";
+		}
 		str = str + "</ul>";
 		if(!isRoot) str += "</li>";
 		return str;
@@ -101,6 +110,12 @@ Ref.prototype.method = function(name, symbol){
 		(symbol ? " "+symbol : "")+
 		"</a>";
 	return str;
+}
+
+// Set up data to render and flush memory
+Ref.prototype.setRender = function(str){
+	this.render = str;
+	this.data = this.backup = null;
 }
 
 Ref.prototype.url = function(){

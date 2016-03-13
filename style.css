@@ -2,14 +2,14 @@
 /*             PAGE LAYOUT             */
 /***************************************/
 html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #fefefe;
-    color: #333;
-    font-family: "Georgia";
-    font-size: 16px;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+  color: #333;
+  font-family: "Georgia";
+  font-size: 16px;
 }
 
 a {
@@ -48,9 +48,9 @@ h3 {
 }
 
 header, footer {
-    width: 100%;
-    position: fixed;
-    /*background-color: #fcc;*/
+  width: 100%;
+  position: fixed;
+  /*background-color: #fcc;*/
 }
 
 footer {
@@ -59,10 +59,10 @@ footer {
 }
 
 #container {
-    position: absolute;
-    top: 60px;
-    bottom: 10px;
-    width: 100%;
+  position: absolute;
+  top: 60px;
+  bottom: 10px;
+  width: 100%;
 }
 
 #folder, #file {
@@ -74,6 +74,7 @@ footer {
 /***************************************/
 header {
   top: 0;
+  margin-left: 10px;
   height: 60px;
 }
 
@@ -89,11 +90,11 @@ header {
 /*            FOLDER SECTION           */
 /***************************************/
 #folder {
-    width: 200px;
-    margin-left: 10px;
-    float: left;
-    overflow-y: scroll;
-    font-size: larger;
+  width: 200px;
+  margin-left: 10px;
+  float: left;
+  overflow-y: scroll;
+  font-size: larger;
 }
 
 #folder ul {
@@ -107,30 +108,33 @@ header {
 
 #folder li a {
   display: block;
-  padding: 5px;
+  padding: 10px;
 }
 
 #folder .header,
 #folder .header .header {
   background: #eeeeee;
 }
-#folder .close{
-  text-align: center;
-}
-
 #folder .header li {
   background: #ffffff;
+}
+#folder .close{
+  color: #666;
+  text-align: center;
 }
 /***************************************/
 /*            FILE SECTION             */
 /***************************************/
 #file {
-    margin: 0px 10px 0px 210px;
-    width: auto;
-    overflow-y: scroll;
+  margin: 0px 10px 0px 210px;
+  width: auto;
+  overflow-y: scroll;
 }
 #file b {
   display: block;
+}
+#file p {
+  margin-left: 10px;
 }
 #file li {
   margin: 10px 10px;

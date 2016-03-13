@@ -72,10 +72,12 @@ var Menu = {
 			$('#' + url).addClass('active');
 		} else if(r.contents.length){
 			$("#"+r.id()).toggle();
-		} else if(r.data){
+		} else if(r.data || r.render){
 			$('.item').removeClass('active');
 			$('#' + url).addClass('active');
-			this.file$.html(this.dataList(r.data, r.name));
+			// flushing a bit of memory to render SRD quicker
+			if(!r.render) r.setRender(this.dataList(r.data, r.name));
+			this.file$.html(r.render);
 			this.file$.scrollTop(0);
 		} else {
 			console.log("empty ref at: "+url);
