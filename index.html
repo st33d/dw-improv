@@ -5,8 +5,7 @@
 		<title>Dungeon World Improv</title>
 		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
 		<script type="text/javascript">
-		Check if a new cache is available on page load.
-		window.addEventListener('load', function(e) {
+		window.addEventListener('load',function(e){// Check if a new cache is available on page load.
 			window.applicationCache.addEventListener('updateready', function(e) {
 				if(window.applicationCache.status == window.applicationCache.UPDATEREADY){
 					window.applicationCache.swapCache();

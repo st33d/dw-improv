@@ -9,10 +9,12 @@ var Menu = {
 	
 	folder$:null,
 	file$:null,
+	item$:null,
 	
 	init: function(folder$, file$){
 		this.folder$ = folder$;
 		this.file$ = file$;
+		item$ = $('.item');
 		
 		var markov = Menu.markovList;
 		var pick20 = Menu.pick20;
@@ -61,6 +63,9 @@ var Menu = {
 			return;
 		}
 		
+		// cache rules everything around me
+		if(!r.id$) r.id$ = $("#"+r.id());
+		if(this.chosen) this.chosen.id$.removeClass('active');
 		this.chosen = r;
 		
 		if(r.func){
@@ -68,13 +73,11 @@ var Menu = {
 				this.dataList(r.func(r.data, r.name), r.name)
 			);
 			this.file$.scrollTop(0);
-			$('.item').removeClass('active');
-			$('#' + url).addClass('active');
+			r.id$.addClass('active');
 		} else if(r.contents.length){
-			$("#"+r.id()).toggle();
+			r.id$.toggle();
 		} else if(r.data || r.render){
-			$('.item').removeClass('active');
-			$('#' + url).addClass('active');
+			r.id$.addClass('active');
 			// flushing a bit of memory to render SRD quicker
 			if(!r.render) r.setRender(this.dataList(r.data, r.name));
 			this.file$.html(r.render);
