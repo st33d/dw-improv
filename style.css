@@ -2,10 +2,6 @@
 /*             PAGE LAYOUT             */
 /***************************************/
 html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
   background-color: #fefefe;
   color: #333;
   font-family: "Georgia";
@@ -47,56 +43,9 @@ h3 {
   padding: 5px 10px;
 }
 
-header, footer {
-  width: 100%;
-  position: fixed;
-  /*background-color: #fcc;*/
-}
-
-footer {
-  bottom: 0;
-  height: 10px;
-}
-
-#container {
-  position: absolute;
-  top: 60px;
-  bottom: 10px;
-  width: 100%;
-}
-
-#folder, #file {
-    height: 100%;
-    /*background-color: #ccf;*/
-}
-/***************************************/
-/*            HEADER SECTION           */
-/***************************************/
-header {
-  top: 0;
-  margin-left: 10px;
-  height: 60px;
-}
-
-.small {
-  font-size: smaller;
-}
-
-.small a {
-  font-size: smaller;
-  padding: 0px 2px;
-}
 /***************************************/
 /*            FOLDER SECTION           */
 /***************************************/
-#folder {
-  width: 200px;
-  margin-left: 10px;
-  float: left;
-  overflow-y: scroll;
-  font-size: larger;
-}
-
 #folder ul {
   list-style-type: none;
   margin: 0px 0px;
@@ -127,7 +76,6 @@ header {
 /***************************************/
 #file {
   margin: 0px 10px 0px 210px;
-  width: auto;
   overflow-y: scroll;
 }
 #file b {

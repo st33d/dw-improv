@@ -1,50 +1,61 @@
 <!doctype html>
 <html manifest="manifest.appcache">
-	<head>
-		<meta charset="utf-8">
-		<title>Dungeon World Improv</title>
-		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
-		<script type="text/javascript">
-		window.addEventListener('load',function(e){// Check if a new cache is available on page load.
-			window.applicationCache.addEventListener('updateready', function(e) {
-				if(window.applicationCache.status == window.applicationCache.UPDATEREADY){
-					window.applicationCache.swapCache();
-					window.location.reload();
-					console.log("appcache updated");
-					sessionStorage.setItem("appcache_update", 1);
 
-				}
-			}, false);
-		}, false);
-		</script>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-		<header class="small">
-		<h2>Dungeon World Improv</h2>
-		<div >An indie tool for <a href="http://www.dungeon-world.com/" target="_blank">Dungeon World</a> - <a href="javascript:$('#file').html($('#sources').html());">Sources:</a>
-		<div id="sources" style="display: none;">
-				<h3>Sources</h3>
-				<ul class="passage">
-				<li><a href="http://www.dungeonworldsrd.com/">Dungeon World SRD</a>
-				<li><a href="http://angband.oook.cz/steamband/Tricks.pdf">Tricks, Empty Rooms, and Basic Trap Design</a> by Courtney C. Campbell
-				<li><a href="http://www222.pair.com/sjohn/blueroom/plots.htm">The Big List of RPG Plots</a> by S. John Ross
-				</ul>
-				<p>This project is open source on <a href="https://github.com/st33d/dw-improv">GitHub.</a>
-		</header>
+<head>
+    <meta charset="utf-8">
+    <title>Dungeon World Improv</title>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <script type="text/javascript">
+        window.addEventListener('load', function (e) { // Check if a new cache is available on page load.
+            window.applicationCache.addEventListener('updateready', function (e) {
+                if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+                    window.applicationCache.swapCache();
+                    window.location.reload();
+                    console.log("appcache updated");
+                    sessionStorage.setItem("appcache_update", 1);
 
-		<div id="container">
-			<div id="folder">Loading...</div>
-			<div id="file"><h3>Select a page from the folders on the left</h3></div>
-		</div>
-		<script src="js/filth.js"></script>
-		<script src="js/markov.js"></script>
-		<script src="js/rng.js"></script>
-		<script src="js/ref.js"></script>
-		<script src="js/menu.js"></script>
-		<script>
-			Menu.init($("#folder"), $("#file"));
-		</script>
-		<footer></footer>
-	</body>
+                }
+            }, false);
+        }, false);
+    </script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Dungeon World Improv</h2>
+                <div>An indie tool for <a href="http://www.dungeon-world.com/" target="_blank">Dungeon World</a> - <a href="javascript:$('#file').html($('#sources').html());">Sources:</a>
+                    <div id="sources" style="display: none;">
+                        <h3>Sources</h3>
+                        <ul class="passage">
+                            <li><a href="http://www.dungeonworldsrd.com/">Dungeon World SRD</a>
+                                <li><a href="http://angband.oook.cz/steamband/Tricks.pdf">Tricks, Empty Rooms, and Basic Trap Design</a> by Courtney C. Campbell
+                                    <li><a href="http://www222.pair.com/sjohn/blueroom/plots.htm">The Big List of RPG Plots</a> by S. John Ross
+                        </ul>
+                        <p>This project is open source on <a href="https://github.com/st33d/dw-improv">GitHub.</a>
+                    </div>
+                </div>
+            
+            
+                <div id="folder" class="col-md-4">Loading...</div>
+                <div id="file" class="col-md-8">
+                    <h3>Select a page from the folders on the left</h3>
+                </div>
+            </div>
+                <script src="js/filth.js"></script>
+                <script src="js/markov.js"></script>
+                <script src="js/rng.js"></script>
+                <script src="js/ref.js"></script>
+                <script src="js/menu.js"></script>
+                <script>
+                    Menu.init($("#folder"), $("#file"));
+                </script>
+                <footer></footer>
+            
+
+</body>
+
 </html>
