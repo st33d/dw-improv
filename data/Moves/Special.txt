@@ -1,7 +1,7 @@
 <b>Last Breath</b> You’re dying (roll+Nothing): 10+ cheat death, 7-9 death offers a bargain, 6- dead.
 <b>Encumbrance</b> Make a move while carrying weight up to or equal to Load: At load +1 or +2, -1 to moves. At load +3 or more, drop 1 weight and roll -1 or auto-fail.
 <b>Make Camp</b> Settle in to rest (consume a ration): Level Up if enough XP, if few hours uninterrupted rest - heal half max HP.
-<b>Take Watch</b> On watch and something approaches the camp (roll+WIS): 10+ camp is woken and has +1 forwards, 7-9 woken without preparation, 6- the enemy surprises you.
+<b>Take Watch</b> On watch and something approaches the camp (roll+WIS): 10+ camp is woken and takes +1 forward, 7-9 woken without preparation, 6- the enemy surprises you.
 <b>Bolster</b> Spend your leisure time in study, meditation, or hard practice: 1 week - 1 preparation, 1 month 3 preparation. Spend preparation to gain +1 forwards to a roll (no stacking).
 <b>Undertake A Perilous Journey</b> Travel through hostile territory. Assign Trailblazer, Scout, Quartermaster (each roll+WIS) rolls less than 10 sacrifice arriving with advantage. <ul><li>Trailblazer: 7+ reduce time travelled.</li><li>Scout: 7+ spot trouble.</li><li>Quartermaster: 7+ reduce rations required by 1</li></ul>
 <b>Recover</b> Do nothing but rest in comfort and safety: 1 day of rest - recover all HP, 3 days of rest - remove debility (2 days if cared by healer).

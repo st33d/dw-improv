@@ -1,6 +1,19 @@
 <b>Ankheg</b> Group, Large, Bite (d8+1 damage); 10 HP; 3 Armor, Close, Reach, <i>Special Qualities: Burrowing</i> Instinct: To undermine<ul><li>Undermine the ground</li><li>Burst from the earth</li><li>Spray forth acid, eating away at metal and flesh</li></ul>
-<b></b><ul><li></li><li></li><li></li></ul>
-<b></b><ul><li></li><li></li><li></li></ul>
-<b></b><ul><li></li><li></li><li></li></ul>
-<b></b><ul><li></li><li></li><li></li></ul>
-<b></b><ul><li></li><li></li><li></li></ul>
+<b>Cave Rat</b> Horde, Small, Gnaw (d6 damage 1 piercing); 7 HP; 1 Armor, Close, Messy, Instinct: To devour<ul><li>Swarm</li><li>Rip something (or someone) apart</li></ul>
+<b>Choker</b> Solitary, Stealthy, Intelligent, Choke (d10 damage); 15 HP; 2 Armor, Close, Reach, <i>Special Qualities: Flexible</i>, Instinct: To deny light<ul><li>Hold someone, wringing the breath from them</li><li>Fling a held creature</li></ul>
+<b>Cloaker</b> Solitary, Stealthy, Constrict (d10 damage ignores armor); 12 HP; 1 Armor, Close, <i>Special Qualities: Looks like a cloak</i> Instinct: To engulf<ul><li>Engulf the unsuspecting</li></ul>
+<b>Dwarven Warrior</b> Horde, Organized, Axe (d6 damage); 7 HP; 2 Armor, Close, Instinct: To defend<ul><li>Drive them back</li><li>Call up reinforcements</li></ul>
+<b>Earth Elemental</b> Solitary, Huge, Smash (d10+5 damage); 27 HP; 4 Armor, Reach, Forceful, <i>Special Qualities: Made of stone</i>, Instinct: To show the strength of earth<ul><li>Turn the ground into a weapon</li><li>Meld into stone</li></ul>
+<b>Fire Beetle</b> Horde, Small, Flames (d6 damage ignores armor); 3 HP; 3 Armor, Near, <i>Special Qualities: Full of flames</i>, Instinct: To enflame<ul><li>Undermine the ground</li><li>Burst from the earth</li><li>Spray forth flames</li></ul>
+<b>Gargoyle</b> Horde, Stealthy, Hoarder, Claw (d6 damage); 3 HP; 2 Armor, Close, <i>Special Qualities: Wings</i>, Instinct: To guard<ul><li>Attack with the element of surprise</li><li>Take to the air</li><li>Blend into stonework</li></ul>
+<b>Gelatinous Cube</b> Solitary, Large, Stealthy, Amorphous, Engulf (d10+1 damage ignores armor); 20 HP; 1 Armor, Hand, <i>Special Qualities: Transparent</i>, Instinct: To clean<ul><li>Fill an apparently empty space</li><li>Dissolve</li></ul>
+<b>Goblin</b> Horde, Small, Intelligent, Organized, Spear (d6 damage); 3 HP; 1 Armor, Close, Reach, Instinct: To multiply<ul><li>Charge!</li><li>Call more goblins</li><li>Retreat and return with (many) more</li></ul>
+<b>Goblin Orkaster</b> Solitary, Small, Magical, Intelligent, Organized, Acid orb (d10+1 damage ignores armor); 12 HP; 0 Armor, Near, Far, Instinct: To tap power beyond their stature<ul><li>Unleash a poorly understood spell</li><li>Pour forth magical chaos</li><li>Use other goblins for shields</li></ul>
+<b>Goliath</b> Group, Huge, Organized, Intelligent, Mace (d8+7 damage); 14 HP; 1 Armor, Reach, Forceful, Instinct: To retake<ul><li>Shake the earth</li><li>Retreat, only to come back stronger</li></ul>
+<b>Otyugh</b> Solitary, Large, Tentacles (d10+3 damage); 20 HP; 1 Armor, Close, Reach, Forceful, <i>Special Qualities: Filth Fever<i>, Instinct: To befoul<ul><li>Infect someone with filth fever</li><li>Fling someone or something</li></ul>
+<b>Maggot-Squid</b> Horde, Small, Chew (d6 damage); 3 HP; 1 Armor, Close, <i>Special Qualities: Amphibious, Paralyzing Tentacles<i>, Instinct: To eat<ul><li>Paralyze with a touch</li></ul>
+<b>Purple Worm</b> Solitary, Huge, Bite (d10+5 damage); 20 HP; 2 Armor, Reach, Forceful, <i>Special Qualities: Burrowing</i>, Instinct: To consume<ul><li>Swallow whole</li><li>Tunnel through stone and earth</li></ul>
+<b>Roper</b> Solitary, Large, Stealthy, Intelligent, Bite (d10+1 damage); 16 HP; 1 Armor, Close, Reach, <i>Special Qualities: Rock-like Flesh</i>, Instinct: To ambush<ul><li>Ensnare the unsuspecting</li><li>Disarm a foe</li><li>Chew on someone</li></ul>
+<b>Rot Grub</b> Horde, Tiny, Burrow (d6-2 damage); 3 HP; 0 Armor, Hand, <i>Special Qualities: Burrow into flesh</i>, Instinct: To infect<ul><li>Burrow under flesh</li><li>Lay eggs</li><li>Burst forth from an infected creature</li></ul>
+<b>Spiderlord</b> Solitary, Large, Devious, Intelligent, Mandibles (d8+4 damage); 16 HP; 3 Armor, Close, Reach, <i>Special Qualities: Burrowing</i>, Instinct: To weave webs (literal and metaphorical)<ul><li>Enmesh in webbing</li><li>Put a plot into motion</li></ul>
+<b>Troglodyte</b> Group, Organized, Club (d8 damage); ; 10 HP; 1 Armor, Close, Instinct: To prey on civilization<ul><li>Raid and retreat</li><li>Use scavenged weapons or magic</li></ul>
