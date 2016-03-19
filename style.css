@@ -1,148 +1,100 @@
 /***************************************/
 /*             PAGE LAYOUT             */
 /***************************************/
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #fefefe;
-  color: #333;
-  font-family: "Georgia";
-  font-size: 16px;
+
+html,
+body {
+    background-color: #fefefe;
+    color: #333;
+    font-family: "Georgia";
+    font-size: 16px;
 }
 
 a {
-  color: #800;
-  font-weight: bold;
-  text-decoration: none;
+    color: #800;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 a.active,
 a:hover {
-  background-color: #800;
-  color: #fff;
-  display: inline-block;
+    background-color: #800;
+    color: #fff;
 }
 
 ul {
-  list-style-position: inside;
-  margin: 0;
-  padding: 0;
-  line-height: 1.2;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
 }
 
 li {
-  margin: 0;
+    margin: 0;
 }
 
 h2 {
-  margin: 10px 0;
-  padding: 0px;
+    margin: 10px 0;
+    padding: 0px;
 }
 
 h3 {
-  background-color: #eee;
-  margin: 0 0 10px 0;
-  padding: 5px 10px;
-}
-
-header, footer {
-  width: 100%;
-  position: fixed;
-  /*background-color: #fcc;*/
-}
-
-footer {
-  bottom: 0;
-  height: 10px;
-}
-
-#container {
-  position: absolute;
-  top: 60px;
-  bottom: 10px;
-  width: 100%;
-}
-
-#folder, #file {
-    height: 100%;
-    /*background-color: #ccf;*/
-}
-/***************************************/
-/*            HEADER SECTION           */
-/***************************************/
-header {
-  top: 0;
-  margin-left: 10px;
-  height: 60px;
-}
-
-.small {
-  font-size: smaller;
-}
-
-.small a {
-  font-size: smaller;
-  padding: 0px 2px;
+    background-color: #eee;
+    margin: 0 0 10px 0;
+    padding: 5px 10px;
 }
 /***************************************/
 /*            FOLDER SECTION           */
 /***************************************/
-#folder {
-  width: 200px;
-  margin-left: 10px;
-  float: left;
-  overflow-y: scroll;
-  font-size: larger;
-}
 
 #folder ul {
-  list-style-type: none;
-  margin: 0px 0px;
+    list-style-type: none;
+    margin: 0px 0px;
+    padding-left: 10px;
 }
 
 #folder li {
-  margin: 0;
+    margin: 0;
 }
 
 #folder li a {
-  display: block;
-  padding: 10px;
+    padding: 2px;
 }
 
 #folder .header,
 #folder .header .header {
-  background: #eeeeee;
+    background: #eeeeee;
 }
+
 #folder .header li {
-  background: #ffffff;
+    background: #ffffff;
 }
-#folder .close{
-  color: #666;
-  text-align: center;
+
+#folder .close {
+    color: #666;
+    text-align: center;
 }
 /***************************************/
 /*            FILE SECTION             */
 /***************************************/
-#file {
-  margin: 0px 10px 0px 210px;
-  width: auto;
-  overflow-y: scroll;
-}
+
 #file b {
-  display: block;
+    display: block;
 }
+
 #file p {
-  margin-left: 10px;
+    margin-left: 10px;
 }
+
 #file li {
-  margin: 10px 10px;
+    margin: 10px 10px;
 }
-.passage{
-  list-style-type: none;
+
+.passage {
+    list-style-type: none;
 }
+
 #file li li {
-  list-style-type: disc;
-  margin: 10px 15px;
+    list-style-type: disc;
+    margin: 10px 15px;
 }
