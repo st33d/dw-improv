@@ -19,6 +19,7 @@
         }, false);
     </script>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
 </head>
 
@@ -32,30 +33,32 @@
                         <h3>Sources</h3>
                         <ul class="passage">
                             <li><a href="http://www.dungeonworldsrd.com/">Dungeon World SRD</a>
-                                <li><a href="http://angband.oook.cz/steamband/Tricks.pdf">Tricks, Empty Rooms, and Basic Trap Design</a> by Courtney C. Campbell
-                                    <li><a href="http://www222.pair.com/sjohn/blueroom/plots.htm">The Big List of RPG Plots</a> by S. John Ross
+                                <li><a href="http://angband.oook.cz/steamband/Tricks.pdf">Tricks, Empty Rooms, and Basic Trap Design</a> by Courtney C. Campbell </li>
+                                <li><a href="http://www222.pair.com/sjohn/blueroom/plots.htm">The Big List of RPG Plots</a> by S. John Ross </li>
                         </ul>
                         <p>This project is open source on <a href="https://github.com/st33d/dw-improv">GitHub.</a>
+                        </p>
                     </div>
                 </div>
-            
-            
-                <div id="folder" class="col-md-4">Loading...</div>
-                <div id="file" class="col-md-8">
-                    <h3>Select a page from the folders on the left</h3>
-                </div>
             </div>
-                <script src="js/filth.js"></script>
-                <script src="js/markov.js"></script>
-                <script src="js/rng.js"></script>
-                <script src="js/ref.js"></script>
-                <script src="js/menu.js"></script>
-                <script>
-                    Menu.init($("#folder"), $("#file"));
-                </script>
-                <footer></footer>
-            
+        </div>
+        <div class="row">
+            <div id="folder" class="col-sm-3">Loading...</div>
+            <div id="file" class="col-sm-9">
+                <h3>Select a page from the folders on the left</h3>
+            </div>
+        </div>
 
+        <script src="js/filth.js"></script>
+        <script src="js/markov.js"></script>
+        <script src="js/rng.js"></script>
+        <script src="js/ref.js"></script>
+        <script src="js/menu.js"></script>
+        <script>
+            Menu.init($("#folder"), $("#file"));
+        </script>
+        <footer></footer>
+    </div>
 </body>
 
 </html>
