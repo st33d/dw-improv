@@ -1,7 +1,8 @@
 
-var Ref = function(name, parent){
+var Ref = function(name, parent, d){
 	this.name = name;
 	this.parent = parent;
+	this.d = d || 0;
 	this.contents = [];
 	this.data = null;
 	this.func = null;
@@ -14,7 +15,7 @@ Ref.prototype.load = function(obj, cacheUpdate){
 
 	for(var k in obj){
 		var v = obj[k];
-		r = new Ref(k, this);
+		r = new Ref(k, this, this.d + 1);
 
 		if(typeof v === 'function'){
 			// function acting on data-set
@@ -67,12 +68,13 @@ Ref.prototype.load = function(obj, cacheUpdate){
 Ref.prototype.html = function(isRoot){
 	var str = "";
 	var m = this.method;
+	var pad = "&nbsp;&nbsp;";
 	if(this.contents.length){
 		if(isRoot){
 			str = "<ul>";
 		} else {
 			str = "<li class='header'>"+
-				this.method(this.name, "\u279b")+
+				this.method(this.chars(pad, this.d - 1)+this.name, "\u279b")+
 				"<ul id='"
 				+this.id()
 				+"' style='display: none;'>";
@@ -80,21 +82,26 @@ Ref.prototype.html = function(isRoot){
 		for(var i = 0; i < this.contents.length; i++){
 			str += this.contents[i].html();
 		}
-		if(!isRoot){ // show close of folder and depth
-			var p = this.parent;
-			var depth = "*";
-			while(p){
-				p = p.parent;
-				if(p) depth += "*";
-			}
-			str += "<li class='close'>"+depth+"</li>";
-		}
 		str = str + "</ul>";
 		if(!isRoot) str += "</li>";
 		return str;
 	} else {
-		return "<li"+">"+this.method(this.name, (this.func != null ? Rng.symbol() : null))+"</li>";
+		return "<li>"+
+			this.method(
+				this.chars(pad, this.d - 1)+this.name,
+				(this.func != null ? Rng.symbol() : null)
+			)+
+			"</li>";
 	}
+}
+
+Ref.prototype.chars = function(token, n){
+	n = n || 0;
+	var str = "";
+	while(n-- > 0){
+		str += token
+	}
+	return str;
 }
 
 Ref.prototype.method = function(name, symbol){

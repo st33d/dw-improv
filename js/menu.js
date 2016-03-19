@@ -34,10 +34,10 @@ var Menu = {
 				"Name-Gen":{
 					Deity:markov, Irish:markov, Tolkien:markov
 				},
-				Instincts:pick20, Knacks:pick20,
 				"Monsters":{
-					Folk:true, Woods:true
-				}
+					Caves:true, Folk:true, Woods:true
+				},
+				Instincts:pick20, Knacks:pick20
 			},
 			Gear:true,
 			Things:pick10,
@@ -63,24 +63,25 @@ var Menu = {
 			return;
 		}
 		
-		// cache rules everything around me
+		// cache
 		if(!r.id$) r.id$ = $("#"+r.id());
-		if(this.chosen) this.chosen.id$.removeClass('active');
 		this.chosen = r;
 		
 		if(r.func){
-			this.file$.html(
+			this.file$.empty();
+			this.file$.append(
 				this.dataList(r.func(r.data, r.name), r.name)
 			);
 			this.file$.scrollTop(0);
-			r.id$.addClass('active');
 		} else if(r.contents.length){
 			r.id$.toggle();
 		} else if(r.data || r.render){
-			r.id$.addClass('active');
-			// flushing a bit of memory to render SRD quicker
-			if(!r.render) r.setRender(this.dataList(r.data, r.name));
-			this.file$.html(r.render);
+			if(!r.e){
+				r.e = this.dataList(r.data, r.name);
+				r.data = r.backup = true; // flush for memory
+			}
+			this.file$.empty();
+			this.file$.append(r.e);
 			this.file$.scrollTop(0);
 		} else {
 			console.log("empty ref at: "+url);
@@ -106,6 +107,7 @@ var Menu = {
 	},
 	
 	dataList: function(data, title){
+		var div = document.createElement('div');
 		var str = "";
 		if(title) str += "<h3>"+title+"</h3>";
 		str += "<ul>";
@@ -119,7 +121,8 @@ var Menu = {
 			}
 		};
 		str += "</ul>";
-		return str;
+		div.innerHTML = str;
+		return div;
 	},
 	
 	getRef: function(url){
