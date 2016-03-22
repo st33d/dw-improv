@@ -19,6 +19,7 @@ var Menu = {
 		var markov = Menu.markovList;
 		var pick20 = Menu.pick20;
 		var pick10 = Menu.pick10;
+		var pick5 = Menu.pick5;
 		var pick3 = Menu.pick3;
 		
 		this.root = new Ref("data", 0);
@@ -35,7 +36,8 @@ var Menu = {
 					Deity:markov, Irish:markov, Tolkien:markov
 				},
 				"Monsters":{
-					Caves:true, Folk:true, Woods:true
+					Summon:pick5, Caves:true, Depths:true, Folk:true, Hordes:true,
+					Planar:true, Strange:true, Swamp:true, Undead:true, Woods:true
 				},
 				Instincts:pick20, Knacks:pick20
 			},
@@ -53,6 +55,14 @@ var Menu = {
 		console.log("loaded");
 		console.log(this.root);
 		sessionStorage.setItem("appcache_update", 0);
+		
+		// hack for monster summon - glues all monster lists together for Summon
+		var r = this.getRef("_data_NPCs_Monsters_Summon");
+		r.data = [];
+		var f = r.parent.contents;
+		for (var i = f.length - 1; i >= 0; i--) {
+			r.data = r.data.concat(f[i].data);
+		};
 	},
 	
 	open: function(url){
@@ -88,14 +98,16 @@ var Menu = {
 		}
 	},
 	
+	// I should be cleverer than this, but not today
 	pick3:function(data, title){
 		return Rng.pickList(data, 3);
 	},
-	
+	pick5:function(data, title){
+		return Rng.pickList(data, 5);
+	},
 	pick10:function(data, title){
 		return Rng.pickList(data, 10);
 	},
-	
 	pick20:function(data, title){
 		return Rng.pickList(data, 20);
 	},

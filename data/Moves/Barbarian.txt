@@ -4,7 +4,7 @@
 <b>Full Plate And Packing Steel</b> You ignore the clumsy tag on armor you wear.
 <b>Unencumbered, Unharmed</b> Below your Load and neither wear armor nor carry a shield, take +1 armor.
 <b>The Upper Hand</b> +1 ongoing to last breath rolls.
-<b>What Are You Waiting For?</b> Cry out a challenge to your enemies (roll+CON): 10+ they treat you as the most obvious threat, 7–9 only a few (the weakest) fall prey to your taunting.
+<b>What Are You Waiting For?</b> Cry out a challenge to your enemies (roll+CON): 10+ they treat you as the most obvious threat, take +2 damage ongoing against them. 7–9 only a few (the weakest) fall prey to your taunting.
 <b>Herculean Appetites</b> Choose 2 appetites - when pursuing roll 1D6+1D8 for your moves, if D6 is highest GM introduces complication.
 <b>Musclebound</b> While you wield a weapon it gains the forceful and messy tags.
 <h3>Advanced Moves 2-10</h3>
