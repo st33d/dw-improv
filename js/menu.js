@@ -33,7 +33,7 @@ var Menu = {
 			},
 			"NPCs":{
 				"Name-Gen":{
-					Deity:markov, Irish:markov, Tolkien:markov
+					Deity:markov, English:pick20, Irish:markov, Tolkien:markov
 				},
 				"Monsters":{
 					Summon:pick5, Caves:true, Depths:true, Folk:true, Hordes:true,
@@ -57,7 +57,7 @@ var Menu = {
 		sessionStorage.setItem("appcache_update", 0);
 		
 		// hack for monster summon - glues all monster lists together for Summon
-		var r = this.getRef("_data_NPCs_Monsters_Summon");
+		var r = this.getRef("data_NPCs_Monsters_Summon");
 		r.data = [];
 		var f = r.parent.contents;
 		for (var i = f.length - 1; i >= 0; i--) {

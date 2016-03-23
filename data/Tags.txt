@@ -1,7 +1,6 @@
 n Ammo (equipment): It can be used as ammunition for certain weapons. The number listed is not an exact count, but a general quantity.
 Amorphous (monster): Its anatomy is bizarre and unnatural.
-Applied (equipment): It’s only useful when carefully applied to a
-person or something they eat or drink.
+Applied (equipment): It’s only useful when carefully applied to a person or something they eat or drink.
 Arcane (steading); Someone of notable arcane power lives here.
 n Armor (equipment): Subtract n from all damage dealt to you. If you have multiple items with n armor, you only use the highest n.
 +n Armor (equipment): Add n to your total armor.
