@@ -1,15 +1,25 @@
 /***************************************/
 /*             PAGE LAYOUT             */
 /***************************************/
-html, body {
-  height: 100%;
-  width: 100%;
+html {
   margin: 0;
-  padding: 0;
+}
+
+body {
   background-color: #fefefe;
   color: #333;
   font-family: "Georgia";
   font-size: 16px;
+  margin: 0;
+  padding: 10px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+html.framed, body.framed {
+  height: 100%;
+  width: 100%;
+  padding: 0;
 }
 
 a {
@@ -44,35 +54,39 @@ h2 {
 h3 {
   background-color: #eee;
   margin: 0 0 10px 0;
-  padding: 5px 10px;
+  padding: 10px 10px 10px 10px;
 }
 
-header, footer {
+header.framed, footer.framed {
   width: 100%;
   position: fixed;
-  /*background-color: #fcc;*/
+  
 }
 
-footer {
+footer.framed {
   bottom: 0;
   height: 10px;
 }
 
 #container {
+  margin-top: 10px;
+}
+
+#container.framed {
   position: absolute;
   top: 60px;
   bottom: 10px;
   width: 100%;
 }
 
-#folder, #file {
+#folder.framed, #file.framed {
     height: 100%;
-    /*background-color: #ccf;*/
+    
 }
 /***************************************/
 /*            HEADER SECTION           */
 /***************************************/
-header {
+header.framed {
   top: 0;
   margin-left: 10px;
   height: 60px;
@@ -90,16 +104,25 @@ header {
 /*            FOLDER SECTION           */
 /***************************************/
 #folder {
+  display: inline-block;
+  margin-right: 20px;
+  width: 175px;
+  font-size: larger;
+}
+#folder.framed {
   width: 200px;
   margin-left: 10px;
+  margin-right: 0px;
   float: left;
   overflow-y: scroll;
-  font-size: larger;
 }
 
 #folder ul {
   list-style-type: none;
   margin: 0px 0px;
+}
+#folder.framed ul {
+  padding: 0;
 }
 
 #folder li {
@@ -122,13 +145,21 @@ header {
   color: #666;
   text-align: center;
 }
+
 /***************************************/
 /*            FILE SECTION             */
 /***************************************/
 #file {
+  display: inline-block;
+  width: calc(100% - 200px);
+  vertical-align: top;
+}
+#file.framed {
   margin: 0px 10px 0px 210px;
   width: auto;
   overflow-y: scroll;
+  vertical-align: baseline;
+  display: block;
 }
 #file b {
   display: block;
@@ -145,4 +176,19 @@ header {
 #file li li {
   list-style-type: disc;
   margin: 10px 15px;
+}
+/***************************************/
+/*           MOBILE OVERRIDES          */
+/***************************************/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 500px) {
+  #folder {
+    margin-bottom: 30px;
+  }
+
+  #file, #folder {
+    display: block;
+    width: 100%;
+  }
 }

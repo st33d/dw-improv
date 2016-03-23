@@ -20,9 +20,10 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<header class="small">
+		<header>
+		<div class="small">
 		<h2>Dungeon World Improv</h2>
-		<div >An indie tool for <a href="http://www.dungeon-world.com/" target="_blank">Dungeon World</a> - <a href="javascript:$('#file').html($('#sources').html());">Sources:</a>
+		<div >An indie tool for <a href="http://www.dungeon-world.com/" target="_blank">Dungeon World</a> - <a href="javascript:$('#file').html($('#sources').html());">Sources</a> - <a href="javascript:Menu.toggleFramed();">Toggle Framed</a>
 		<div id="sources" style="display: none;">
 				<h3>Sources</h3>
 				<ul class="passage">
@@ -31,12 +32,15 @@
 				<li><a href="http://www222.pair.com/sjohn/blueroom/plots.htm">The Big List of RPG Plots</a> by S. John Ross
 				</ul>
 				<p>This project is open source on <a href="https://github.com/st33d/dw-improv">GitHub.</a>
+		</div>
 		</header>
-
+		
 		<div id="container">
 			<div id="folder">Loading...</div>
 			<div id="file"><h3>Select a page from the folders on the left</h3></div>
 		</div>
+		<footer></footer>
+		
 		<script src="js/filth.js"></script>
 		<script src="js/markov.js"></script>
 		<script src="js/rng.js"></script>
@@ -45,6 +49,5 @@
 		<script>
 			Menu.init($("#folder"), $("#file"));
 		</script>
-		<footer></footer>
 	</body>
 </html>

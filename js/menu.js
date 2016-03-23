@@ -12,6 +12,7 @@ var Menu = {
 	item$:null,
 	
 	init: function(folder$, file$){
+		
 		this.folder$ = folder$;
 		this.file$ = file$;
 		item$ = $('.item');
@@ -24,7 +25,13 @@ var Menu = {
 		
 		this.root = new Ref("data", 0);
 		var cacheUpdate = parseInt(sessionStorage.getItem("appcache_update"));
-		if(cacheUpdate) localStorage.clear();
+		var framed = localStorage.getItem("framed");
+		if(cacheUpdate){
+			localStorage.clear();
+			localStorage.setItem("framed", framed);
+		}
+		if(framed == "1") this.toggleFramed(true);
+		console.log(framed);
 		this.root.load({
 			"Moves":{
 				Basic:true, Special:true, Barbarian:true, Bard:true, Cleric:true,
@@ -151,5 +158,24 @@ var Menu = {
 			path.shift();
 		}
 		return r;
+	},
+	
+	toggleFramed: function(forceFramed){
+		var f = "framed";
+		var framed = localStorage.getItem(f);
+		if(!forceFramed && framed == "1"){
+			f = framed = "";
+		} else {
+			framed = "1";
+		}
+		document.documentElement.className = f;
+		document.getElementsByTagName('body')[0].className = f;
+		document.getElementsByTagName('header')[0].className = f;
+		document.getElementsByTagName('footer')[0].className = f;
+		document.getElementById('container').className = f;
+		document.getElementById('folder').className = f;
+		document.getElementById('file').className = f;
+		localStorage.setItem("framed", framed);
 	}
+	
 }

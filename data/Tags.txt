@@ -5,7 +5,7 @@ Arcane (steading); Someone of notable arcane power lives here.
 n Armor (equipment): Subtract n from all damage dealt to you. If you have multiple items with n armor, you only use the highest n.
 +n Armor (equipment): Add n to your total armor.
 Awkward (equipment): It’s unwieldy and tough to use.
-Battalion(steading defenses): As many as 1,000 armed-and-ready soldiers.
+Battalion (steading defenses): As many as 1,000 armed-and-ready soldiers.
 Blight (steading): The steading has a recurring problem, often a monster infestation.
 Booming (steading population): Far more people than there is space.
 Cautious (monster): It prefers the defensive and will avoid a fight unless it is sure to win.
@@ -29,7 +29,7 @@ Forceful (equipment): When used as a weapon, it can knock someone backwards or e
 Garrison (steading defenses): Multiple patrols of armed guards at all times.
 Group (monster organization): It’s usually encountered in groups of 3–6.
 Growing (steading population): The steadig is expanding.
-Guard(steadingdefenses):Astandingforceprotectsthesteading.
+Guard (steading defenses): A standing force protects the steading.
 Guild (steading): The listed guilds hold sway here.
 Hand (weapon range): You can use it to attack someone at arm’s length or closer.
 History (steading): The steading has historical significance.
@@ -72,7 +72,7 @@ Solitary (monster organization): It can live and fight without the help of other
 Steady (steading population): Population even with the steading’s size.
 Stealthy (monster): It can avoid detection and attack with surprise.
 Stun (equipment): It does stun damage instead of normal damage.
-Terrifying(monster):Justbeingclosetoitislikelytomakepeople break and flee.
+Terrifying (monster): Just being close to it is likely to make people break and flee.
 Thrown (equipment): It’s still dangerous when you throw it.
 Tiny (monster size): It’s smaller than a halfling.
 Touch (equipment): You use it by touching it to the target’s skin.
