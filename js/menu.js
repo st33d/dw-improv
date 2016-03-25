@@ -6,16 +6,19 @@ var Menu = {
 	chosen:null,
 	loading:0,
 	loaded:0,
+	framed:"",
 	
 	folder$:null,
+	folder:null,
 	file$:null,
-	item$:null,
+	file:null,
 	
 	init: function(folder$, file$){
 		
 		this.folder$ = folder$;
+		this.folder = folder$[0];
 		this.file$ = file$;
-		item$ = $('.item');
+		this.file = file$[0];
 		
 		var markov = Menu.markovList;
 		var pick20 = Menu.pick20;
@@ -25,13 +28,12 @@ var Menu = {
 		
 		this.root = new Ref("data", 0);
 		var cacheUpdate = parseInt(sessionStorage.getItem("appcache_update"));
-		var framed = localStorage.getItem("framed");
+		this.framed = localStorage.getItem("framed");
 		if(cacheUpdate){
 			localStorage.clear();
-			localStorage.setItem("framed", framed);
+			localStorage.setItem("framed", this.framed);
 		}
-		if(framed == "1") this.toggleFramed(true);
-		console.log(framed);
+		if(this.framed == "1") this.toggleFramed(true);
 		this.root.load({
 			"Moves":{
 				Basic:true, Special:true, Barbarian:true, Bard:true, Cleric:true,
@@ -80,6 +82,12 @@ var Menu = {
 			return;
 		}
 		
+		// on mobile? href to #file so we can use back button to get to menu
+		var style = window.getComputedStyle(this.file);
+		var scrollTo = 
+			this.framed != "1" &&
+			style.display.indexOf("inline-block") == -1;
+		
 		// cache
 		if(!r.id$) r.id$ = $("#"+r.id());
 		this.chosen = r;
@@ -90,6 +98,7 @@ var Menu = {
 				this.dataList(r.func(r.data, r.name), r.name)
 			);
 			this.file$.scrollTop(0);
+			if(scrollTo) window.location.href = "#file";
 		} else if(r.contents.length){
 			r.id$.toggle();
 		} else if(r.data || r.render){
@@ -100,6 +109,7 @@ var Menu = {
 			this.file$.empty();
 			this.file$.append(r.e);
 			this.file$.scrollTop(0);
+			if(scrollTo) window.location.href = "#file";
 		} else {
 			console.log("empty ref at: "+url);
 		}
@@ -173,9 +183,10 @@ var Menu = {
 		document.getElementsByTagName('header')[0].className = f;
 		document.getElementsByTagName('footer')[0].className = f;
 		document.getElementById('container').className = f;
-		document.getElementById('folder').className = f;
-		document.getElementById('file').className = f;
+		this.folder.className = f;
+		this.file.className = f;
 		localStorage.setItem("framed", framed);
+		this.framed = framed;
 	}
 	
 }

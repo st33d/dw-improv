@@ -16,7 +16,7 @@ Contains text from:
 
 **Issues**
 
-* CSS still being worked on
+* CSS can still use more work.
 * Slightly worried about wholesale reproducing text so I'm wary of crossing the line (may have with Knacks and Instincts generator based on Appendix 4).
 
 **To Add**
