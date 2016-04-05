@@ -36,7 +36,7 @@ var Menu = {
 		if(this.framed == "1") this.toggleFramed(true);
 		this.root.load({
 			"Moves":{
-				Basic:true, Special:true, Barbarian:true, Bard:true, Cleric:true,
+				Basic:true, Special:true, GM:true, Barbarian:true, Bard:true, Cleric:true,
 				"Cleric-Spells":true, Druid:true, Fighter:true, Immolator:true,
 				Paladin:true, Ranger:true, Thief:true, Wizard:true, "Wizard-Spells":true
 			},
@@ -48,13 +48,14 @@ var Menu = {
 					Summon:pick5, Caves:true, Depths:true, Folk:true, Hordes:true,
 					Planar:true, Strange:true, Swamp:true, Undead:true, Woods:true
 				},
-				Instincts:pick20, Knacks:pick20
+				Instincts:pick20, Knacks:pick20, Hirelings:true
 			},
 			Gear:true,
 			Things:pick10,
 			Effects:pick20,
 			Plots:pick3,
-			Tags:true
+			Tags:true,
+			"First-Game":true
 		}, cacheUpdate);
 	},
 	

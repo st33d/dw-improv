@@ -1,0 +1,18 @@
+<b>Hardware</b> Character sheets, move sheets, dice, pencils, blank paper (for GM <i>and for players</i>).
+<b>Moves</b> 2D6 + Modifier.<ul><li>10+ success.</li><li>7-9 success with complications.</li><li>6- you won't like it.</li></ul>All dice rolls are done by the players. Pay attention to basic moves, each stat has a purpose.
+<b>Scores and Modifiers</b><ul><li>Score: Determines modifier. Also used for resources like hit points and discounts on services.</li><li>Modifier: Added to move rolls and certain resources. Eg: STR is the modifier derived from Strength.</li></ul>
+<h3>Character creation</h3>
+<b>p48</b>
+<b>Class</b>
+<b>Race</b>
+<b>Name</b>
+<b>Look</b>
+<b>Stats</b><ul><li>16 (+2)</li><li>15 (+1)</li><li>13 (+1)</li><li>12 (+0)</li><li>9 (+0)</li><li>8 (-1)</li></ul>
+<b>Score Modifiers</b><ul><li>1–3: -3</li><li>4–5: -2</li><li>6–8: -1</li><li>9–12: 0</li><li>13–15: +1</li><li>16–17: +2</li><li>18: +3</li></ul>
+<b>Max HP</b> Base class HP+Constitution<ul><li>Barbarian: 8</li><li>Bard: 6</li><li>Cleric: 6</li><li>Druid: 6</li><li>Fighter: 10</li><li>Immolator: 4</li><li>Paladin: 10</li><li>Ranger: 8</li><li>Thief: 6</li><li>Wizard: 4</li></ul>
+<b>Starting moves</b> Resolve the blanks and checkboxes on starting moves. Prepare spells: cantrips/rotes free - do not count towards prepared total. Can prepare level+1 spells. Wizard gets 3 1st level spells in their book.
+<b>Alignment</b>
+<b>Gear</b> Max Load: Base class Load+STR<ul><li>Barbarian: 8</li><li>Bard: 9</li><li>Cleric: 10</li><li>Druid: 6</li><li>Fighter: 12</li><li>Immolator: 9</li><li>Paladin: 12</li><li>Ranger: 11</li><li>Thief: 9</li><li>Wizard: 7</li></ul>
+<b>Introduce Your Character</b> Ask questions about the character's traits and history.
+<b>Bonds</b> Stress the value of Aid or Interfere move (roll+number of bonds). Discover why the characters have a history that is unresolved.
+<b>Take a Break</b> Brainstorm. <i>Steed's own recipe: Create name tags for characters and hirelings to hang on GM screen (and hang +/- 1 forwards on characters). I use blank business cards folded in half and write on both sides.</i>
