@@ -1,7 +1,7 @@
 <b>Hack and Slash</b> Attack an enemy in melee (roll+STR): 10+ deal damage and do +1D6 if take damage, 7-9 both deal damage.
 <b>Volley</b> Shoot an enemy at range (roll+DEX): 10+ deal damage, 7-9 lose ammo or -1D6 damage or in danger.
 <b>Parley</b> Leverage on an NPC (roll+CHA): 10+ they do it for a promise, 7-9 they need something now.
-<b>Defy Danger</b> Act despite an imminent threat (roll+Stat): 10+ evade, 7-9 worse outcome / hard bargain / ugly choice.
+<b>Defy Danger</b> Act despite an imminent threat or suffer calamity (roll+Stat): 10+ evade, 7-9 worse outcome / hard bargain / ugly choice.<ul><li>by powering through, +Str</li><li>by getting out of the way or acting fast, +Dex</li><li>by enduring, +Con</li><li>with quick thinking, +Int</li><li>through mental fortitude, +Wis</li><li>using charm and social grace, +Cha</li></ul>
 <b>Defend</b> Stand in defense of a person, item, or location (roll+CON): 10+ hold 3, 7-9 hold 1 - spend to half damage / +1 forward to ally / (your level) damage to attacker.
 <b>Discern Realities</b> Closely study a situation or person (roll+WIS): 10+ ask 3, 7-9 ask 1. Take +1 forward when acting on the answers.<ul><li>what happened recently?</li><li>what happens next?</li><li>what to look for?</li><li>what is useful here?</li><li>who's in control?</li><li>what is false here?</li></ul>
 <b>Spout Lore</b> Consult your accumulated knowledge about something (roll+INT): 10+ GM tells useful info, 7-9 GM tells interesting info.

@@ -54,7 +54,11 @@ var Rng = {
 	},
 	
 	roll: function(mod){
-		return this.value(1, 6)+this.value(1, 6)+mod;
+		return this.die(6)+this.die(6)+mod;
+	},
+	
+	die: function(n){
+		return Math.ceil(Math.random() * n);
 	},
 	
 	/* Give 2 arrays to randomly pick an item based on the weights */

@@ -61,6 +61,7 @@ Ref.prototype.load = function(obj, cacheUpdate){
 			r.load(v, cacheUpdate);
 		}
 		if(v) this.contents.push(r);
+		else if(v === false) this.dataSet.push(r);
 	}
 	if(!this.parent && Menu.loading == 0) Menu.onLoaded();
 }

@@ -50,6 +50,10 @@ var Menu = {
 				},
 				Instincts:pick20, Knacks:pick20, Hirelings:true
 			},
+			"Places":{
+				"Names":Menu.placeNameList,
+				"Steadings":true
+			},
 			Gear:true,
 			Things:pick10,
 			Effects:pick20,
@@ -96,7 +100,7 @@ var Menu = {
 		if(r.func){
 			this.file$.empty();
 			this.file$.append(
-				this.dataList(r.func(r.data, r.name), r.name)
+				this.dataList(r.func(r), r.name)
 			);
 			this.file$.scrollTop(0);
 			if(scrollTo) window.location.href = "#file";
@@ -117,23 +121,67 @@ var Menu = {
 	},
 	
 	// I should be cleverer than this, but not today
-	pick3:function(data, title){
-		return Rng.pickList(data, 3);
+	pick3:function(r){
+		return Rng.pickList(r.data, 3);
 	},
-	pick5:function(data, title){
-		return Rng.pickList(data, 5);
+	pick5:function(r){
+		return Rng.pickList(r.data, 5);
 	},
-	pick10:function(data, title){
-		return Rng.pickList(data, 10);
+	pick10:function(r){
+		return Rng.pickList(r.data, 10);
 	},
-	pick20:function(data, title){
-		return Rng.pickList(data, 20);
+	pick20:function(r){
+		return Rng.pickList(r.data, 20);
 	},
 	
-	markovList:function(data, title, total){
-		if(!Markov.nameSet[title]) Markov.nameSet[title] = data;
+	markovList:function(r, total){
+		if(!Markov.nameSet[r.name]) Markov.nameSet[r.name] = r.data;
 		total = total || 20;
-		return Markov.getNameList(title, total);
+		return Markov.getNameList(r.name, total);
+	},
+	
+	placeNameList:function(r, total){
+		var i, roll, d = r.data, data = ["<h3>Region</h3>"];
+		
+		// Perilous Wilds did not make this easy to code:
+		if(!r.initialised){
+			var list = [[]];
+			for(i = 0; i < d.length; i++){
+				if(d[i] == "*"){
+					list.push([]);
+				} else {
+					list[list.length-1].push(d[i]);
+				}
+			}
+			r.data = d = {};
+			d.terrainType = list[0];
+			d.terrainAdj = list[1];
+			d.terrainNoun = list[2];
+			d.placeType = list[3];
+			d.placeAdj = list[4];
+			d.placeNoun = list[5];
+			r.initialised = true;
+		}
+		for(i = 0; i < 10; i++){
+			roll = Rng.die(12);
+			if(roll <= 4) data.push(Rng.pick(d.terrainAdj)+" "+Rng.pick(d.terrainType));
+			else if(roll <= 6) data.push(Rng.pick(d.terrainType)+" of (the) "+Rng.pick(d.terrainNoun));
+			else if(roll <= 8) data.push("The "+Rng.pick(d.terrainType)+" "+Rng.pick(d.terrainAdj));
+			else if(roll <= 10) data.push(Rng.pick(d.terrainNoun)+" "+Rng.pick(d.terrainType));
+			else if(roll <= 11) data.push(Rng.pick(d.terrainNoun)+"'s "+Rng.pick(d.terrainAdj)+" "+Rng.pick(d.terrainType));
+			else data.push(Rng.pick(d.terrainAdj)+" "+Rng.pick(d.terrainType)+" of (the) "+Rng.pick(d.terrainNoun));
+		}
+		data.push("<h3>Places</h3>");
+		for(i = 0; i < 10; i++){
+			roll = Rng.die(12);
+			if(roll <= 2) data.push("The "+Rng.pick(d.placeType));
+			else if(roll <= 4) data.push("The "+Rng.pick(d.placeAdj)+" "+Rng.pick(d.placeType));
+			else if(roll <= 6) data.push("The "+Rng.pick(d.placeType)+" of (the) "+Rng.pick(d.placeNoun));
+			else if(roll <= 8) data.push("(The) "+Rng.pick(d.placeNoun)+"'s "+Rng.pick(d.placeType));
+			else if(roll <= 10) data.push(Rng.pick(d.placeType)+" of the "+Rng.pick(d.placeAdj)+" "+Rng.pick(d.placeNoun));
+			else  data.push("The "+Rng.pick(d.placeAdj)+" "+Rng.pick(d.placeNoun));
+		}
+		return data;
 	},
 	
 	dataList: function(data, title){
